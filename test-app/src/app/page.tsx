@@ -1,10 +1,9 @@
-import styles from './page.module.css'
 import Accueil from './accueil'
 import Prestations from './prestations'
 
 export default function Home() {
   return (
-     <div className={styles.main}>
+     <div>
         <Accueil />
         <div> 
           <p>Bien etre, detente, relaxation...</p>

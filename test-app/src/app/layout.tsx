@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import NavBar from "./navBar";
 import Footer from "./footer";
-import "./globals.css";
+import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Institut secret de beaute",
