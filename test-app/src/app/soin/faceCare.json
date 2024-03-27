@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Soin 1",
+        "description": "Description du soin 1",
+        "duration": 60,
+        "price": 50
+    },
+    {
+        "name": "Soin 2",
+        "description": "Description du soin 2",
+        "duration": 90,
+        "price": 70
+    },
+    {
+        "name": "Soin 3",
+        "description": "Description du soin 3",
+        "duration": 120,
+        "price": 90
+    }
+]

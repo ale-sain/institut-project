@@ -1,9 +1,16 @@
-import Image from "next/image";
+import styles from './page.module.css'
+import Accueil from './accueil'
+import Prestations from './prestations'
 
 export default function Home() {
   return (
-     <div>
-       <h1>Welcome to Home!</h1>
+     <div className={styles.main}>
+        <Accueil />
+        <div> 
+          <p>Bien etre, detente, relaxation...</p>
+          <p>De la lumiere tamisee, une ambiance feutree, de la musique douce, laissez-vous emporter...</p>
+        </div>
+        <Prestations />
      </div>
    )
 }
