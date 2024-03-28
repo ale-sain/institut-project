@@ -18,6 +18,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 
 .title {
@@ -38,10 +40,13 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
+    background-color: aqua;
 }
 
 .item {
     color: #4d4e52;
+    height:100%;
+    /* background-color: aquamarine; */
     font-weight: 300;
     font-size: 0.9rem;
     cursor: pointer;
@@ -49,6 +54,10 @@
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.item:hover {
+    color:black !important;
 }
 
 /* Media queries pour les ajustements d'affichage */
@@ -71,22 +80,33 @@
         left: 0;
         right: 0;
         padding-left:5%;
-        align-items: flex-start;
         background-color: #fefbf7; /* Assure un fond pour le menu déroulant */
         z-index: 9; /* Garde le menu juste en dessous de la navBar */
     }
 
     .menu.open {
         display: flex; /* Affiche le menu quand .open est ajouté */
-        padding-bottom:1%;
+        padding-bottom:2%;
     }
 
     .item {
-        margin: 16px 0;
+        display:flex;
+        width:100%;
+        margin: 18px 0;
         font-size:1.35rem;
     }
 
     .title {
         font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .menu:hover .item {
+        color: #969696; /* Gris clair pour tous les items lors du survol du menu */
+    }
+
+    .item:hover {
+        color:black !important;
     }
 }
