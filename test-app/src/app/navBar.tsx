@@ -2,25 +2,48 @@
 import React from 'react'
 import Link from 'next/link'
 import '../styles/navbar.css'
+import '../styles/nav-icon.css'
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false);
+
+    const handleItemMouseEnter = (e : any) => {
+        if (isOpen) return; // Si le menu est ouvert, on ne fait rien
+        e.stopPropagation(); // Empêche l'événement de se propager au conteneur .menu
+        document.querySelectorAll('.item').forEach(item => {
+            if (item !== e.target) {
+                item.classList.add('dim');
+            } else {
+                item.classList.remove('dim');
+            }
+        });
+    };
+
+    const handleMouseLeave = () => {
+        if (isOpen) return; // Si le menu est ouvert, on ne fait rien
+        document.querySelectorAll('.item').forEach(item => {
+            item.classList.remove('dim');
+        });
+    };
 
     return (
         <nav className="navBar">
             <div className="outNav">
                 <h1 className="title">Institut secret de beaute</h1>
-                <div className="menuButton" onClick={() => setIsOpen(!isOpen)}>
-                    {isOpen ? 'X' : '☰'}
+                <div className={`nav-icon ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div className={`menu ${isOpen ? 'open' : ''}`}>
-                    <Link className="item" href="/">Accueil</Link>
-                    <Link className="item" href="/thalion">Thal'ion</Link>
-                    <Link className="item" href="/epilation">Epilation</Link>
-                    <Link className="item" href="/soin">Soins du visage</Link>
-                    <Link className="item" href="/soinregard">Soins du regard</Link>
-                    <Link className="item" href="/reflexologie">Reflexologie</Link>
-                    <Link className="item" href="/onglerie">Onglerie</Link>
+                    <Link className="item" href="/" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Accueil</Link>
+                    <Link className="item" href="/thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Thal'ion</Link>
+                    <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Epilation</Link>
+                    <Link className="item" href="/soin" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du visage</Link>
+                    <Link className="item" href="/soinregard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du regard</Link>
+                    <Link className="item" href="/reflexologie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Reflexologie</Link>
+                    <Link className="item" href="/onglerie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Onglerie</Link>
                 </div>
             </div>
         </nav>
