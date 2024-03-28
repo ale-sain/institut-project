@@ -36,15 +36,15 @@ export default function NavBar() {
                     <span></span>
                     <span></span>
                 </div>
-                <div className={`menu ${isOpen ? 'open' : ''}`}>
-                    <Link className="item" href="/" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Accueil</Link>
-                    <Link className="item" href="/thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Thal'ion</Link>
-                    <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Epilation</Link>
-                    <Link className="item" href="/soin" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du visage</Link>
-                    <Link className="item" href="/soinregard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du regard</Link>
-                    <Link className="item" href="/reflexologie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Reflexologie</Link>
-                    <Link className="item" href="/onglerie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Onglerie</Link>
-                </div>
+                    <div className={`menu ${isOpen ? 'open' : ''}`}>
+                        <Link className="item" href="/" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Accueil</Link>
+                        <Link className="item" href="/thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Thal'ion</Link>
+                        <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Epilation</Link>
+                        <Link className="item" href="/soin" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du visage</Link>
+                        <Link className="item" href="/soinregard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du regard</Link>
+                        <Link className="item" href="/reflexologie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Reflexologie</Link>
+                        <Link className="item" href="/onglerie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Onglerie</Link>
+                    </div>
             </div>
         </nav>
         )

@@ -17,8 +17,8 @@
     left: 0;
     right: 0;
     height:4.5rem;
-    background-color: #fefbf7;
-    z-index: 10;
+    background-color: #f7fef7;
+    z-index: 10000;
     animation: slideDown 1s ease-out forwards;
 }
 
@@ -27,6 +27,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f7fef7;
+    z-index:500;
 }
 
 .title {
@@ -36,6 +38,7 @@
     padding-right: 1rem;
     text-align: center;
     width: 15%;
+    z-index: 10000;
 }
 
 .menu {
@@ -61,9 +64,20 @@
     color: black !important;
 }
 
+
 @media screen and (max-width: 1024px) {
     .outNav {
         width: 90%;
+        z-index: 500;
+    }
+
+    @keyframes slideDownMenu {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
     }
 
     .menu {
@@ -76,53 +90,18 @@
         right: 0;
         padding-left: 5%;
         padding-top: 2%;
-        z-index: 9;
+        z-index: 1;
         padding-bottom:4%;
         background-color: #fefbf7;
+        transform: translateY(-100%);
     }
 
     .menu.open {
         display: grid;
+        z-index: 1;
+        transform: translateY(0);
+        animation: slideDownMenu 0.5s ease-out forwards; 
     }
-
-    .container {
-        position: relative;
-        overflow: hidden;
-        height: 9000px;
-      }
-      
-      .menu-drawer {
-        width: 400px;
-        background-color: #ccc;
-        height: 900px;
-        position: absolute;
-        right: -550px;
-        top: 0;
-        transition: right linear .2s;
-        padding: 50px;
-      }
-      
-      .open {
-        right: 0px;
-        transition: right linear .2s;
-      }
-      
-      .menu-drawer {
-        li {
-          font-family: lato;
-          font-weight: bold;
-          margin-bottom: 30px;
-          font-size: 50px;
-          text-align: center;
-          a {
-            text-decoration: none;
-            color: #555;
-            &:hover {
-              color: #0094FC;
-            }
-          }
-        }
-      }
 
     .item {
         text-align: left;
