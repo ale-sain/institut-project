@@ -10,7 +10,10 @@ export default function NavBar() {
         <nav className="navBar">
             <div className="outNav">
                 <h1 className="title">Institut secret de beaute</h1>
-                <div className="items">
+                <div className="menuButton" onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? 'X' : '☰'}
+                </div>
+                <div className={`menu ${isOpen ? 'open' : ''}`}>
                     <Link className="item" href="/">Accueil</Link>
                     <Link className="item" href="/thalion">Thal'ion</Link>
                     <Link className="item" href="/epilation">Epilation</Link>

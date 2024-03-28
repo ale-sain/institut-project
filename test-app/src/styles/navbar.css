@@ -10,11 +10,11 @@
     left: 0;
     right: 0;
     background-color: #fefbf7;
-    z-index: 1000; /* Assurez-vous que la navbar reste au-dessus des autres contenus */
+    z-index: 10; /* Assure que la navBar reste au-dessus du contenu */
 }
 
 .outNav {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,16 +23,21 @@
 .title {
     color: black;
     font-weight: 400;
-    font-size: 1.2rem;
-    text-align: center; /* Alignement à gauche pour que le titre soit au début */
-    padding-right:2rem;
-    width:15%;
+    font-size: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    width: auto; 
 }
 
-.items {
-    display: flex;
-    justify-content: flex-end; /* Alignement des items à la fin */
+.menuButton {
+    display: none;
+}
+
+.menu {
+    display: flex; 
+    justify-content: flex-end;
     align-items: center;
+    flex-direction: row;
 }
 
 .item {
@@ -42,6 +47,46 @@
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    margin-left:1rem;
-    margin-right:1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Media queries pour les ajustements d'affichage */
+@media screen and (max-width: 1024px) {
+    .outNav {
+        width: 90%;
+    }
+
+    .menuButton {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer; /* Ajouté pour améliorer l'interactivité */
+    }
+
+    .menu {
+        display: none; /* Caché par défaut en dessous de 1024px */
+        flex-direction: column; /* Pour l'alignement vertical quand ouvert */
+        position: absolute; /* Pour s'afficher en dessous de la barre de navigation */
+        top: 100%; /* Positionné directement en dessous de la navBar */
+        left: 0;
+        right: 0;
+        padding-left:5%;
+        align-items: flex-start;
+        background-color: #fefbf7; /* Assure un fond pour le menu déroulant */
+        z-index: 9; /* Garde le menu juste en dessous de la navBar */
+    }
+
+    .menu.open {
+        display: flex; /* Affiche le menu quand .open est ajouté */
+        padding-bottom:1%;
+    }
+
+    .item {
+        margin: 16px 0;
+        font-size:1.35rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
 }
