@@ -1,16 +1,25 @@
-import React from 'react'
-import fs from 'fs';
-import path from 'path';
+'use client'
+import React, { useEffect, useState } from 'react'
 
 async function getCares() {
-    const fileContent = fs.readFileSync('/usr/app/src/app/soin/faceCare.json', 'utf8');
-    const data = JSON.parse(fileContent);
+    
+    const baseUrl = window.location.origin;
+    const response = await fetch(`${baseUrl}/faceCare.json`);
+    const data = await response.json();
 
     return data;
 }
 
-export default async function FaceCare() {
-    const data = await getCares();
+export default function FaceCare() {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+            const data = await getCares();
+            setData(data);
+        }
+        fetchData();
+    }, []);
+
     return (
         <div>
             {data.map((care : any, index : any) => (
