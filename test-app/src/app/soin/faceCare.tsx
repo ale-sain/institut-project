@@ -13,7 +13,7 @@ export default async function FaceCare() {
     const data = await getCares();
     return (
         <div>
-            {data.map((care, index) => (
+            {data.map((care : any, index : any) => (
                 <div key={index}>
                     <h2>{care.name}</h2>
                     <p>{care.description}</p>
