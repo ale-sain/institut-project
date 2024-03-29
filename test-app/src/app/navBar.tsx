@@ -8,8 +8,8 @@ export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const handleItemMouseEnter = (e : any) => {
-        if (isOpen) return; // Si le menu est ouvert, on ne fait rien
-        e.stopPropagation(); // Empêche l'événement de se propager au conteneur .menu
+        if (isOpen) return; 
+        e.stopPropagation();
         document.querySelectorAll('.item').forEach(item => {
             if (item !== e.target) {
                 item.classList.add('dim');
@@ -20,7 +20,7 @@ export default function NavBar() {
     };
 
     const handleMouseLeave = () => {
-        if (isOpen) return; // Si le menu est ouvert, on ne fait rien
+        if (isOpen) return; 
         document.querySelectorAll('.item').forEach(item => {
             item.classList.remove('dim');
         });

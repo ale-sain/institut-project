@@ -1,7 +1,7 @@
 @media screen and (max-width: 1024px) {
       .nav-icon {
         width: 23px;
-        height: 22.5px;
+        height: 15px;
         position: relative;
         transform: rotate(0deg);
         transition: .5s ease-in-out;
