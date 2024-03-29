@@ -1,11 +1,11 @@
-import React from 'react'
-import Link from 'next/link'
+import React from "react"
+import Link from "next/link"
 
 export default function Prestations() {
   return (
     <>
         <h1>Prestations</h1>
-        <p>Pour une relaxation du corps et de l'esprit dans cet espace ou le temps n'existe pas</p>
+        <p>Pour une relaxation du corps et de l&apos;esprit dans cet espace ou le temps n&apos;existe pas</p>
         <div>
             <div><Link href="/epilation">Epilations</Link></div>
             <div><Link href="/soin">Soins du visage</Link></div>

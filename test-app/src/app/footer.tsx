@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div> 
         <Image src={institut} alt="institut" />
-        <div>A propos de l'institut...</div>
+        <div>A propos de l&apos;institut...</div>
         <h1>Institut secret de beaute</h1>
         <div>
             <div>
@@ -18,7 +18,7 @@ export default function Footer() {
                 <p>Rendez-vous par SMS</p>
             </div>
             <div>
-                <p>Horaires d'ouverture :</p>
+                <p>Horaires d&apos;ouverture :</p>
                 <p>Ouvert sur rendez-vous</p>
                 <p>du Lundi au Vendredi : de 9h00 a 19h00</p>
                 <p>le Samedi : de 9h00 a 13h00</p>

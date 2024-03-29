@@ -38,7 +38,7 @@ export default function NavBar() {
                 </div>
                     <div className={`menu ${isOpen ? 'open' : ''}`}>
                         <Link className="item" href="/" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Accueil</Link>
-                        <Link className="item" href="/thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Thal'ion</Link>
+                        <Link className="item" href="/thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Thal&apos;ion</Link>
                         <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Epilation</Link>
                         <Link className="item" href="/soin" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du visage</Link>
                         <Link className="item" href="/soinregard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du regard</Link>
