@@ -82,7 +82,7 @@ html, body {
     justify-content: space-between;
     align-items: flex-end;
 }
- /*
+
 .sub-header a {
     text-decoration: none;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ a.aboutme {
 
 .block {
     position: fixed;
-    width: 5%;
+    width: 0%;
     height: 100vh;
     background: #000;
 }
@@ -205,8 +205,12 @@ a.aboutme {
     left: 95%;
 }
 
-@media(max-width: 900px) {
+.nav a, .about p, .sub-header a {
+    opacity: 0; /* Assurez-vous qu'ils sont invisibles au début */
+}
+
+/* @media(max-width: 900px) {
     .about p {
-          width: 100%;
+        width: 100%;
     }
-}  */
+} */

@@ -2,56 +2,52 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './test.css'; 
+import Nav from './nav'
 
 function BlockRevealAnimation() {
-  // useEffect(() => {
-  //   // Utilisation de la syntaxe GSAP 3 pour les animations en série (stagger)
-  //   gsap.from(".block", {
-  //     duration: 0.8,
-  //     width: "0%",
-  //     ease: "power1.in",
-  //     delay: 2,
-  //     stagger: 0.04 // Ici, on applique un décalage en série
-  //   });
+  useEffect(() => {
+    gsap.to(".block", {
+      duration: 0.8,
+      width: "5%",
+      ease: "power1.in",
+      delay: 2,
+      stagger: 0.04
+    });
 
-  //   gsap.to(".loader", {
-  //     duration: 1,
-  //     x: 2,
-  //     opacity: 0,
-  //     ease: "expo.inOut",
-  //     delay: 1.6,
-  //   });
+    gsap.to(".loader", {
+      duration: 1,
+      x: 2,
+      opacity: 0,
+      ease: "expo.inOut",
+      delay: 1.6,
+    });
 
-  //   gsap.from(".nav > a, .about p, .sub-header > a", {
-  //     duration: 2,
-  //     opacity: 0,
-  //     y: 30,
-  //     ease: "expo.inOut",
-  //     delay: 3,
-  //     stagger: 0.06 // Décalage en série ici aussi
-  //   });
+    gsap.fromTo(".nav > a, .about p, .sub-header > a", 
+    { opacity: 0, y: 30 },
+    { duration: 2, opacity: 1, y: 0, ease: "expo.inOut", delay: 3, stagger: 0.06 } // État d'arrivée
+  );
 
-  //   gsap.to(".box", {
-  //     duration: 0.2,
-  //     opacity: 1,
-  //     ease: "expo.inOut",
-  //     delay: 3.8,
-  //   });
+    gsap.to(".box", {
+      duration: 0.2,
+      opacity: 1,
+      ease: "expo.inOut",
+      delay: 3.8,
+    });
 
-  //   gsap.to("img", {
-  //     duration: 0.2,
-  //     opacity: 1,
-  //     ease: "expo.inOut",
-  //     delay: 4,
-  //   });
+    gsap.to("img", {
+      duration: 0.2,
+      opacity: 1,
+      ease: "expo.inOut",
+      delay: 4,
+    });
 
-  //   gsap.to(".box", {
-  //     duration: 2.4,
-  //     y: "-100%",
-  //     ease: "expo.inOut",
-  //     delay: 4,
-  //   });
-  // }, []);
+    gsap.to(".box", {
+      duration: 2.4,
+      y: "-100%",
+      ease: "expo.inOut",
+      delay: 4,
+    });
+  }, []);
 
   return (
     <>
