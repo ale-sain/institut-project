@@ -27,7 +27,7 @@ export default function NavBar() {
     };
 
     return (
-        <nav className="navBar">
+        <nav className="nav">
             <div className="outNav">
                 <div className="bg"></div>
                 <h1 className="title">Institut secret de beaute</h1>
