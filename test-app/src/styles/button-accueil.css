@@ -1,7 +1,7 @@
 :root {
-    --fond-initial:  #8f7d6b;; /* Marron */
-    --fond-animation: #6b5d50; /* Marron plus sombre */
-    --texte: #ffffff; /* Blanc */
+    --fond-initial: #bba18e;
+    --fond-animation: #8f7d6b;
+    --texte: #ffffff;
 }
   .button-container.right {
     bottom: 10%;
@@ -45,42 +45,61 @@
     font-family: Lexend, sans-serif;
 }
 
-  .button.round:before {
-    content: " ";
-    position: absolute;
-    width: 0%;
-    height: 0%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 30em;
-    transition: width 0.2s ease-in, height 0.2s ease-in, opacity 0.2s ease-in, border-radius 0.2s ease-in, transform 0.2s ease-in;
-    background: var(--fond-animation);
-    opacity: 0;
+.button.round:before {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30em;
+  transition: width 0.2s ease-in, height 0.2s ease-in, opacity 0.2s ease-in, border-radius 0.2s ease-in, transform 0.2s ease-in;
+  background: var(--fond-animation);
+  opacity: 0;
+}
+
+.button.round:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30em;
+  transition: width 0.3s ease-out 0.17s, height 0.3s ease-out 0.17s, opacity 0.3s ease-out 0.17s, border-radius 0.3s ease-out 0.17s, transform 0.3s ease-out 0.17s;
+  border: solid 1px var(--fond-initial);
+}
+
+.button.round:hover:before {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.button.round:hover:after {
+  width: 180%;
+  height: 180%;
+  opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+  /* write css properties for the button to be on the top bordure of the img in the left */
+  .button-container.right {
+    top: 0;
+    left:25px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    transform: translateY(-50%); 
+    position:absolute;
+    z-index:100;
   }
-  
-  .button.round:after {
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 30em;
-    transition: width 0.3s ease-out 0.17s, height 0.3s ease-out 0.17s, opacity 0.3s ease-out 0.17s, border-radius 0.3s ease-out 0.17s, transform 0.3s ease-out 0.17s;
-    border: solid 1px var(--fond-initial);
+
+  .button.round:hover {
+    cursor:pointer;
+    display:none;
   }
-  
-  .button.round:hover:before {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .button.round:hover:after {
-    width: 180%;
-    height: 180%;
-    opacity: 0;
-  }
+}
   
