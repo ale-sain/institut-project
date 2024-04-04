@@ -3,9 +3,13 @@
 }
 
 body {
-  background-color: #fefbf7;
-  color: black;
-  font-family: 'Lexend', sans-serif;
+  background-color: #bba18e;
+  color: #1b1b1b;
+  font-family: 'Lexend, sans-serif';
+  font-size: 14px;
+  line-height: 1.5;
+  width:100%;
+  height:100vh;
 }
 
 .section {

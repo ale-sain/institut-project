@@ -4,27 +4,9 @@ import { gsap } from 'gsap';
 import '../styles/revealAnimation.css';
 
 export default function RevealAnimation() {
-    useEffect(() => {
-        gsap.to(".block", {
-          duration: 0.8,
-          width: "5%",
-          ease: "power1.in",
-          delay: 2,
-          stagger: 0.04
-        });
-    
-        gsap.to(".loader", {
-          duration: 1,
-          x: 2,
-          opacity: 0,
-          ease: "expo.inOut",
-          delay: 1.6,
-        });
-    }, []);
-
   return (
-    <div className="container">
-        <div className="loader">loading</div>
+      <div className="container-reveal">
+        <div className="loader">Institut secrets de beaute</div>
             <div className="overlay">
             <div className="block block-1"></div>
             <div className="block block-2"></div>
@@ -46,7 +28,7 @@ export default function RevealAnimation() {
             <div className="block block-18"></div>
             <div className="block block-19"></div>
             <div className="block block-20"></div>
-    </div>
-  </div>
+        </div>
+      </div>
   )
 }
