@@ -13,11 +13,10 @@
     font-size: 2vw;
     z-index:2;
     color: #1b1b1b;
-    font-weight: 300;
-    font-size: 3rem;
+    font-weight: 325;
+    font-size: 2.5rem;
     font-family: 'Lexend', sans-serif;
     text-align: center;
-    z-index: 1;
 }
 
 .overlay {
