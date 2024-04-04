@@ -1,6 +1,5 @@
 'use client'
 import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
 import '../styles/revealAnimation.css';
 
 export default function RevealAnimation() {

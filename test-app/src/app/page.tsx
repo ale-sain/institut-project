@@ -1,7 +1,3 @@
-import Accueil from './accueil'
-import Prestations from './prestations'
-import Link from 'next/link'
-import NavBar from './navBar'
 import AccueilAnimated from './accueilAnimated'
 
 export default function Home() {
