@@ -15,11 +15,9 @@
     color: #1b1b1b;
     font-weight: 300;
     font-size: 3rem;
-    padding-right: 1rem;
     font-family: 'Lexend', sans-serif;
     text-align: center;
-    width: 50%;
-    z-index: 10000;
+    z-index: 1;
 }
 
 .overlay {

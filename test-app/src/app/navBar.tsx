@@ -30,7 +30,7 @@ export default function NavBar() {
         <nav className="nav">
             <div className="outNav">
                 <div className="bg"></div>
-                <h1 className="title">Institut secret de beaute</h1>
+                <h1 className="title">Institut secrets de beaute</h1>
                 <div className={`nav-icon ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
                     <span></span>
                     <span></span>

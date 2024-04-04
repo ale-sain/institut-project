@@ -3,18 +3,13 @@ import Image from 'next/image'
 import accueilPic from '../img/home.jpeg'
 import '../styles/accueil.css'
 import AccueilButton from './button-accueil'
-import RevealAnimation from './revealAnimation'
-import { gsap } from 'gsap';
+import NavBar from './navBar'
 
 export default function Accueil() {
   return (
     <>
       <div className="wrapper-accueil">
-        <div className="nav">
-          <a href="#" className="link">stabondar</a>
-          <a href="#" className="link">fancy mode</a>
-          <a href="#" className="link">menu</a>
-        </div>
+        <NavBar />
         <div className="section">
           <div className="container home">
               <div className="grid">

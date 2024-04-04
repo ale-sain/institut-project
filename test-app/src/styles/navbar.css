@@ -24,7 +24,7 @@
     height:4.5rem;
     background-color: #fefbf7;
     z-index: 10000;
-    animation: slideDown 1s ease-out forwards;
+    /* animation: slideDown 1s ease-out forwards; */
 }
 
 .outNav {
@@ -58,13 +58,14 @@
 .item {
     color: #4d4e52;
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center; 
     text-align: center;
     flex-wrap: nowrap;
+    letter-spacing: -0.3px;
 }
 
 .item:hover {

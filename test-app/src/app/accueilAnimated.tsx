@@ -25,27 +25,27 @@ export default function AccueilAnimated() {
         });
 
         gsap.to(".box", {
-            duration: 0.2,
+            duration: 0.1,
             opacity: 1,
             ease: "expo.inOut",
             delay: 2.6,
           });
       
           gsap.to("img", {
-            duration: 0.2,
+            duration: 0.1,
             opacity: 1,
             ease: "expo.inOut",
             delay: 2.8,
           });
       
           gsap.to(".box", {
-            duration: 2.4,
+            duration: 1.8,
             y: "-100%",
             ease: "expo.inOut",
             delay: 2.8,
           });
 
-          gsap.fromTo(".nav > a, .about p, .about h1, .button", 
+          gsap.fromTo(".nav, .about p, .about h1, .button", 
           { opacity: 0, y: 30 },
           { duration: 2, opacity: 1, y: 0, ease: "expo.inOut", delay: 1.8, stagger: 0.06 } // État d'arrivée
         );
