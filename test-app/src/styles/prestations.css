@@ -1,0 +1,24 @@
+.grid-item._50 {
+    width:50%;
+}
+
+.presta-img-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.img-presta {
+    width:100%;
+    height:120%;
+    object-fit:cover;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    border:0;
+}
+

@@ -4,14 +4,14 @@ import accueilPic from '../img/home.jpeg'
 import '../styles/accueil.css'
 import AccueilButton from './button-accueil'
 import NavBar from './navBar'
+import '../styles/globals.css'
 
 export default function Accueil() {
   return (
     <>
-      <div className="wrapper-accueil">
         <NavBar />
         <div className="section">
-          <div className="container home">
+          <div className="container home w-container">
               <div className="grid">
                 <div className="grid-item _60">
                   <div className="about">
@@ -31,7 +31,6 @@ export default function Accueil() {
               </div>
           </div>
         </div>
-      </div>
     </>
   )
 }
