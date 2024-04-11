@@ -5,9 +5,9 @@ export default function AccueilButton() {
   return (
     <>
         <div className="button-container right">
-            <div className="button round">
+            <a className="button round" href="#prestations">
                 <span>VOIR LES PRESTATIONS</span>
-            </div>
+            </a>
         </div>
     </>
   )

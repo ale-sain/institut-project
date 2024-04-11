@@ -28,6 +28,21 @@ img {
     border:0;
 }
 
+@media screen and (max-width: 1224px) {
+    .presta-left-wrapper {
+        height: 100%;
+        padding-bottom: 40px;
+        padding-right: 10px;
+    }
+
+    .presta-img-wrapper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .grid-item {
         padding: 8px;
@@ -36,8 +51,8 @@ img {
 
     .grid-item._50 {
         width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .grid.reverse {
@@ -48,6 +63,13 @@ img {
         height: 100%;
         padding-bottom: 0;
         padding-right: 0;
+    }
+
+    .presta-img-wrapper {
+        width: 100%;
+        height: 80%;
+        padding-bottom: 0;
+        overflow: hidden;
     }
 }
 
