@@ -61,3 +61,18 @@ font-size: 14px;
     margin: 0; /* Ajustez selon les besoins */
     padding: 0; /* Ajustez selon les besoins */
 }
+
+@media screen and (max-width: 550px) {
+    .specialist-wrapper {
+        margin-top: 20px;
+    }
+
+    .specialist-item:hover {
+        box-shadow: inset 0 120px #e9e5e2;
+      }
+
+      .specialist-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+}
