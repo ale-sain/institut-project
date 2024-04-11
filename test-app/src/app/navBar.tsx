@@ -26,16 +26,6 @@ export default function NavBar() {
         });
     };
 
-    // const scrollToSection = (event, sectionId) => {
-    //     // Prévenir le comportement par défaut de navigation pour les ancres
-    //     event.preventDefault();
-    //     const section = document.getElementById(sectionId);
-    //     if (section) {
-    //         // Utiliser scrollIntoView pour un défilement fluide
-    //         section.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
-
     const smoothScrollTo = (targetId) => {
         const target = document.getElementById(targetId);
         if (!target) return;

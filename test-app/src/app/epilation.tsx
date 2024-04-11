@@ -38,9 +38,9 @@ export default function Epilations() {
 
   return (
     <>
-      <div id="epilation" className="section">
-        <div className="container w-container">
-        <Image className="img-epil" src={ShavedLegs} alt="Shaved legs" />
+      <div className="section epil">
+        <div className="ban-epil"></div>
+        <div id="epilation" className="container w-container">
         <div className="decorative">Prenez soin de vous</div>
             <h2>Epilations</h2>
             <p className="paragraph grey">
