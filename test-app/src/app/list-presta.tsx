@@ -1,12 +1,13 @@
 import React from 'react'
 import '../styles/list-presta.css'
+import smoothScrollTo from './scroll';
 
 export default function ListPrestation() {
   return (
     <div className="specialist-wrapper">
         <div className="w-dyn-items" role="list">
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#epilation">
+                <a className="specialist-item w-inline-block" href="#epilation" onClick={(e) => { e.preventDefault(); smoothScrollTo('epilation'); }}>
                     <div className="specialist-link-wrapper">
                         Epilations →
                     </div>

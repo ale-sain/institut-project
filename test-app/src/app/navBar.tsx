@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import '../styles/navbar.css'
 import '../styles/nav-icon.css'
+import smoothScrollTo from './scroll';
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -26,34 +27,34 @@ export default function NavBar() {
         });
     };
 
-    const smoothScrollTo = (targetId) => {
-        const target = document.getElementById(targetId);
-        if (!target) return;
+    // const smoothScrollTo = (targetId) => {
+    //     const target = document.getElementById(targetId);
+    //     if (!target) return;
 
-        const startPosition = window.scrollY;
-        const targetPosition = target.getBoundingClientRect().top;
-        const distance = targetPosition;
-        let startTime = null;
+    //     const startPosition = window.scrollY;
+    //     const targetPosition = target.getBoundingClientRect().top;
+    //     const distance = targetPosition;
+    //     let startTime = null;
 
-        const easeInOutQuint = (time, start, distance, duration) => {
-            time /= duration / 2;
-            if (time < 1) return (distance / 2) * time * time * time * time * time + start;
-            time -= 2;
-            return (distance / 2) * (time * time * time * time * time + 2) + start;
-        };
+    //     const easeInOutQuint = (time, start, distance, duration) => {
+    //         time /= duration / 2;
+    //         if (time < 1) return (distance / 2) * time * time * time * time * time + start;
+    //         time -= 2;
+    //         return (distance / 2) * (time * time * time * time * time + 2) + start;
+    //     };
 
-        const animation = (currentTime) => {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const duration = 1500; // Durée de l'animation en millisecondes
-            const run = easeInOutQuint(timeElapsed, startPosition, distance, duration);
+    //     const animation = (currentTime) => {
+    //         if (startTime === null) startTime = currentTime;
+    //         const timeElapsed = currentTime - startTime;
+    //         const duration = 1500; // Durée de l'animation en millisecondes
+    //         const run = easeInOutQuint(timeElapsed, startPosition, distance, duration);
 
-            window.scrollTo(0, run);
-            if (timeElapsed < duration) requestAnimationFrame(animation);
-        };
+    //         window.scrollTo(0, run);
+    //         if (timeElapsed < duration) requestAnimationFrame(animation);
+    //     };
 
-        requestAnimationFrame(animation);
-    };
+    //     requestAnimationFrame(animation);
+    // };
 
 
     return (
@@ -68,9 +69,9 @@ export default function NavBar() {
                     <span></span>
                 </div>
                 <div className={`menu ${isOpen ? 'open' : ''}`}>
-                    <a href="#prestations" className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('prestations'); }}>Accueil</a>
+                    <a href="#" className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Accueil</a>
                     {/* <a className="item" href="#thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('thalion'); }}>Thal&apos;ion</a> */}
-                    <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Epilation</Link>
+                    <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('epilation'); }}>Epilation</Link>
                     <Link className="item" href="/soin" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du visage</Link>
                     <Link className="item" href="/soinregard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du regard</Link>
                     <Link className="item" href="/reflexologie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Reflexologie</Link>

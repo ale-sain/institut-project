@@ -10,6 +10,7 @@ import Prestations from './prestations'
 import ListEpilation from './list-epil'
 import Epilations from './epilation'
 import '../styles/list-epil.css'
+import SoinVisage from './soin-visage'
 
 export default function Home() {
   useEffect(() => {
@@ -64,6 +65,7 @@ gsap.to(".box", {
         <PostAccueilText />
         <Prestations />
         <Epilations />
+        <SoinVisage />
       </div>
     </div>
    )

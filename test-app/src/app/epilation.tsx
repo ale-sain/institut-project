@@ -48,7 +48,7 @@ export default function Epilations() {
             </p>
             <div className="grid">
                 <div className="grid-item _50">
-                    <div className="presta-left-wrapper">
+                    <div className="presta-left-wrapper epil">
                         <h4>Tarifs</h4>
                         <ListEpilation list={epilations}/>
                     </div>
