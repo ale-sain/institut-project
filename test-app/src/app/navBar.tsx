@@ -40,7 +40,7 @@ export default function NavBar() {
         const target = document.getElementById(targetId);
         if (!target) return;
 
-        const startPosition = window.pageYOffset;
+        const startPosition = window.scrollY;
         const targetPosition = target.getBoundingClientRect().top;
         const distance = targetPosition;
         let startTime = null;
@@ -55,7 +55,7 @@ export default function NavBar() {
         const animation = (currentTime) => {
             if (startTime === null) startTime = currentTime;
             const timeElapsed = currentTime - startTime;
-            const duration = 1000; // Durée de l'animation en millisecondes
+            const duration = 1500; // Durée de l'animation en millisecondes
             const run = easeInOutQuint(timeElapsed, startPosition, distance, duration);
 
             window.scrollTo(0, run);

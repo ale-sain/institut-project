@@ -7,6 +7,9 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import PostAccueilText from './post-accueil-text'
 import Prestations from './prestations'
+import ListEpilation from './list-epil'
+import Epilations from './epilation'
+import '../styles/list-epil.css'
 
 export default function Home() {
   useEffect(() => {
@@ -60,6 +63,7 @@ gsap.to(".box", {
         {/* <RevealAnimation /> */}
         <PostAccueilText />
         <Prestations />
+        <Epilations />
       </div>
     </div>
    )
