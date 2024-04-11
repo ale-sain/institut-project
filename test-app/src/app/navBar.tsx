@@ -26,6 +26,46 @@ export default function NavBar() {
         });
     };
 
+    // const scrollToSection = (event, sectionId) => {
+    //     // Prévenir le comportement par défaut de navigation pour les ancres
+    //     event.preventDefault();
+    //     const section = document.getElementById(sectionId);
+    //     if (section) {
+    //         // Utiliser scrollIntoView pour un défilement fluide
+    //         section.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
+
+    const smoothScrollTo = (targetId) => {
+        const target = document.getElementById(targetId);
+        if (!target) return;
+
+        const startPosition = window.pageYOffset;
+        const targetPosition = target.getBoundingClientRect().top;
+        const distance = targetPosition;
+        let startTime = null;
+
+        const easeInOutQuint = (time, start, distance, duration) => {
+            time /= duration / 2;
+            if (time < 1) return (distance / 2) * time * time * time * time * time + start;
+            time -= 2;
+            return (distance / 2) * (time * time * time * time * time + 2) + start;
+        };
+
+        const animation = (currentTime) => {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const duration = 1000; // Durée de l'animation en millisecondes
+            const run = easeInOutQuint(timeElapsed, startPosition, distance, duration);
+
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        };
+
+        requestAnimationFrame(animation);
+    };
+
+
     return (
         <nav className="nav">
             <div className="outNav">
@@ -38,8 +78,8 @@ export default function NavBar() {
                     <span></span>
                 </div>
                 <div className={`menu ${isOpen ? 'open' : ''}`}>
-                    <Link className="item" href="/" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Accueil</Link>
-                    <Link className="item" href="/thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Thal&apos;ion</Link>
+                    <a href="#prestations" className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('prestations'); }}>Accueil</a>
+                    {/* <a className="item" href="#thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('thalion'); }}>Thal&apos;ion</a> */}
                     <Link className="item" href="/epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Epilation</Link>
                     <Link className="item" href="/soin" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du visage</Link>
                     <Link className="item" href="/soinregard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave}>Soins du regard</Link>
@@ -51,7 +91,7 @@ export default function NavBar() {
         )
 
             {/* <ul>
-                <li><a href="#thalion">Thal'ion</a></li>
+                <li><a href="#prestations">Thal'ion</a></li>
                 <li><a href="#epilation">Epilation</a></li>
                 <li><a href="#soin">Soin du visage</a></li>
                 <li><a href="#reflexologie">Reflexologie</a></li>

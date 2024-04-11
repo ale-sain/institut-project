@@ -22,7 +22,7 @@ export default function Prestations() {
             </div>
             <div className="grid-item _50">
               <div className="presta-img-wrapper">
-                <Image className="img-presta" src={TeteImg} />
+                <Image className="img-presta" src={TeteImg} alt="Head woman"/>
               </div>
             </div>
           </div>
