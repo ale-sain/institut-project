@@ -43,5 +43,43 @@
     .specialist-item.soin {
         padding-top:16px;
         padding-bottom:16px;
+        flex-direction: row;
     }
+}
+
+input {
+    display: none;
+  }
+
+  .description {
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 20px;
+    font-family: Lexend, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #4d4e52;
+    text-align: justify;
+}
+
+input:checked + .description {
+    max-height: 1000px;
+    opacity: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.arrow-icon
+{ 
+    display: 'inline-block';
+    transform: 'none';
+    transition: 'transform 0.3s ease';
+}
+
+.arrow-icon.up {
+    transform: rotate(180deg);
 }
