@@ -7,8 +7,8 @@ import TeteImg from '../img/sourire.jpeg'
 export default function Prestations() {
   return (
     <>
-      <div id="prestations" className="section">
-        <div className="container w-container">
+      <div className="section">
+        <div id="prestations" className="container w-container">
           <div className="grid reverse">
             <div className="grid-item _50">
               <div className="presta-left-wrapper">

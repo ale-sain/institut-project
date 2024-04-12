@@ -19,7 +19,7 @@ export default function SoinVisage() {
 
   return (
     <>
-    <div id="prestations" className="section">
+    <div className="section">
       <div className="container w-container">
         <div className="grid">
           <div className="grid-item _50">
@@ -27,7 +27,7 @@ export default function SoinVisage() {
               <Image className="img-soin" src={TowelImg} alt="Head woman"/>
             </div>
           </div>
-          <div className="grid-item _50">
+          <div id="soin-visage" className="grid-item _50">
             <div className="presta-right-wrapper">
               <div className="decorative">Bien plus qu'un soin, une evasion</div>
               <h2>Soins du visage</h2>

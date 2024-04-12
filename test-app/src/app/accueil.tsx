@@ -10,7 +10,7 @@ export default function Accueil() {
   return (
     <>
         <NavBar />
-        <div className="section">
+        <div className="section" id="accueil">
           <div className="container home w-container">
               <div className="grid">
                 <div className="grid-item _60">
