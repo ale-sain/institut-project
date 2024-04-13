@@ -103,15 +103,15 @@ h4 {
 
 .big-img {
   width: 46%;
-  height: 61vw;
+  height: 60vw;
   max-height: 1200px;
   overflow: hidden;
 }
 
 .parallx-img {
   width: 100%;
-  height: 120%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 .small-img.opposite {
@@ -120,12 +120,16 @@ h4 {
 }
 
 .small-img {
-  width: 20%;
+  width: 25%;
   height: 29vw;
   overflow: hidden;
+  /* margin-right:5%; */
+  /* border-radius: 55px; */
 }
 
 .center-block {
+  width:100%;
+  height:auto;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -138,12 +142,20 @@ h4 {
 
 .center-content-wrapper {
   max-width: 670px;
+  /* width:80%; */
   background-color: #fff;
-  padding: 80px 100px;
+  padding: 50px 80px;
   box-shadow: 7px 4px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
-.section.triplets {
-  margin-top: 8rem;
+.h3-thalion {
+  font-size: 2vw;
+  font-size: clamp(25px, 2vw, 36px);
+  text-align: center;
+}
+
+.p-thalion {
+  font-size: clamp(12.5px, 1.2vw, 16px);
+  text-align: justify;
 }
 
