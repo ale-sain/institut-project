@@ -92,3 +92,58 @@ h4 {
   font-size: 26px;
   line-height: 24px;
 }
+
+.two-images-wrapper {
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 112px;
+  display: flex;
+  position: relative;
+}
+
+.big-img {
+  width: 46%;
+  height: 61vw;
+  max-height: 1200px;
+  overflow: hidden;
+}
+
+.parallx-img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.small-img.opposite {
+  align-items: flex-end;
+  display: flex;
+}
+
+.small-img {
+  width: 20%;
+  height: 29vw;
+  overflow: hidden;
+}
+
+.center-block {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.center-content-wrapper {
+  max-width: 670px;
+  background-color: #fff;
+  padding: 80px 100px;
+  box-shadow: 7px 4px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section.triplets {
+  margin-top: 8rem;
+}
+

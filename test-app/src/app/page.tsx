@@ -11,6 +11,7 @@ import ListEpilation from './list-epil'
 import Epilations from './epilation'
 import '../styles/list-epil.css'
 import SoinVisage from './soin-visage'
+import Thalion from './thalion'
 
 export default function Home() {
   useEffect(() => {
@@ -66,6 +67,7 @@ gsap.to(".box", {
         <Prestations />
         <Epilations />
         <SoinVisage />
+        <Thalion />
       </div>
     </div>
    )
