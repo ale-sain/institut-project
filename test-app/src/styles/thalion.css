@@ -141,11 +141,146 @@
     padding-top: 30px;
     width: 85%;
     margin: 0 0 30px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #a0a0a0;
 }
 
 .line {
     display: inline-block;
     width:100%;
     font-style: normal;
+}
+
+@media screen and (max-width: 1124px) {
+    .h2-thalion {
+        color:red;
+    }
+
+    .section-t {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        min-height: 750px;
+        padding: 50px 0;
+        position: relative;
+        background-color: #fff;
+        background-position: 50%;
+        background-size: 100%;
+        background-size: cover;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .grid-t {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        display: flex;
+        width: 100%;
+        padding: 30px 0;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        margin: auto;
+        position: relative;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .grid-item-t {
+        margin-bottom:0;
+        width:100%;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        float:left;
+        position: relative;
+        z-index: 2;
+        min-height: 1px;
+        mix-blend-mode: unset !important;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .wrapper-wrapper-t {
+        margin-bottom:0;
+        margin-right: 9px !important;
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+        display: block;
+        line-height: 0;
+        position: relative;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        font-size: 15px !important;
+        font-weight: 300;
+    }
+
+    .img-wrapper-t {
+        display: inline-block;
+        position: relative;
+        max-width: 100%;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .image-thalion {
+        height: auto;
+        vertical-align: middle;
+    }
+
+    .grid-item-t.right {
+        margin-bottom: 0;
+        margin-right: 0 !important;
+        bottom: 0px;
+        top: auto;
+        left: 0px;
+        right: auto;
+        display: flex;
+        align-content: flex-end;
+        flex-wrap: wrap !important;
+        width: 100%;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        float:left;
+        position: relative;
+        z-index: 2;
+        min-height: 1px;
+        mix-blend-mode: unset !important;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .container-title {
+        margin-bottom: 0;
+        text-align: left;
+        min-height: 91px;
+        margin-right: 4px !important;
+        margin-left: -1px !important;
+        word-wrap: break-word;
+        position: relative;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .wrapper-t {
+        padding-bottom: 0;
+        position: relative;
+        font-size: 15px !important;
+        line-height: 30px;
+        font-weight: 300;
+    }
 }
