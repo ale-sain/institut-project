@@ -33,7 +33,7 @@ export default function ListPrestation() {
             <div className="w-dyn-item" role="listitem">
                 <a className="specialist-item w-inline-block" href="#reflexologie">
                     <div className="specialist-link-wrapper">
-                        Reflexologie plantaire →
+                        Réflexologie plantaire →
                     </div>
                     <p className="paragraph small wo">Reflexo plant paragraphe</p>
                 </a>
@@ -41,7 +41,7 @@ export default function ListPrestation() {
             <div className="w-dyn-item" role="listitem">
                 <a className="specialist-item w-inline-block" href="#reflexologie">
                     <div className="specialist-link-wrapper">
-                        Reflexologie cranienne →
+                        Réflexologie cranienne →
                     </div>
                     <p className="paragraph small wo">Reflexo cranienne paragraphe</p>
                 </a>

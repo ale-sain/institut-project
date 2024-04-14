@@ -148,13 +148,13 @@ h4 {
   box-shadow: 7px 4px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
-.h3-thalion {
+.h3-reflexop {
   font-size: 2vw;
-  font-size: clamp(25px, 2vw, 36px);
+  font-size: clamp(23px, 2vw, 36px);
   text-align: center;
 }
 
-.p-thalion {
+.p-reflexop {
   font-size: clamp(12.5px, 1.2vw, 16px);
   text-align: justify;
 }

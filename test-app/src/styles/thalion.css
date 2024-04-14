@@ -1,0 +1,151 @@
+
+.section-t {
+    padding-top: 0px;
+    position: relative;
+    background-position: 50%;
+    background-size: 100%;
+    background-size: cover;
+}
+
+
+.grid-t {
+    padding-top: 3px !important;
+    display: flex;
+    left:-102px;
+    right: auto;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  
+}
+
+.grid-item-t {
+    width:50%;
+    margin-right:0;
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+    float: left;
+    position:relative;
+    z-index: 2;
+    min-height: 1px;
+    mix-blend-mode: unset !important;
+    /* background-color: aqua; */
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  
+}
+
+.wrapper-wrapper-t {
+    margin-bottom: 0;
+    display:flex;
+    margin-left:0;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+    margin-right:auto;
+    line-height:0;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.img-wrapper-t {
+    width: 600px; /* Largeur fixe */
+    height: 800px; /* Hauteur fixe */
+    /* overflow: hidden; */
+    position: relative; /* Nécessaire pour le positionnement correct de l'image */
+  }
+
+  .image-thalion {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover; /* Garantit que l'image couvre entièrement le conteneur sans être déformée */
+    object-position: right; /* Centrer l'image dans le conteneur */
+  }
+.grid-item-t.right {
+    /* background-color: aquamarine; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:40px;
+}
+
+.container-title {
+    text-align: left;
+    margin-bottom: 5px !important;
+    word-wrap: break-word;
+    position:relative;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    /* background-color: blueviolet; */
+}
+
+.wrapper-t {
+    padding-bottom:0;
+    position:relative;
+}
+
+.container-text {
+    margin-bottom: 0;
+    text-align:justify;
+    width:100%;
+    /* word-wrap: break-word; */
+    position:relative;
+    /* background-color: antiquewhite; */
+}
+
+.p-thalion {
+    line-height: 1.4;
+}
+.h2-thalion {
+    margin-bottom: 10px;
+}
+
+.grid-line {
+    top: -206px;
+    bottom: auto;
+    left: 92px;
+    right: auto;
+    padding: 27px 0;
+    width:60%;
+    max-width:1080px;
+    margin:auto;
+    position:relative;
+}
+
+.container-line {
+    margin-right: 0 !important;
+    width:100%;
+    float:left;
+    position:relative;
+    z-index:2;
+    min-height:1px;
+    mix-blend-mode: unset !important;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrapper-line {
+    margin-bottom: 0;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-top: 30px;
+    width: 85%;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.line {
+    display: inline-block;
+    width:100%;
+    font-style: normal;
+}

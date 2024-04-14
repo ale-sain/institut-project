@@ -12,7 +12,7 @@ export default function ReflexologiePlantaire() {
             <div className="grid-item _50 reflexop">
                 <div className="presta-right-wrapper reflexop">
                     <div className="decorative">A essayer au moins une fois...</div>
-                    <h2>Reflexologie plantaire</h2>
+                    <h2>Réflexologie plantaire</h2>
                     <div className="specialist-link-wrapper reflexop">
                         1 HEURE, 45$
                     </div>
@@ -28,10 +28,10 @@ export default function ReflexologiePlantaire() {
         <div className="small-img opposite">
             <Image src={ReflexoImg} alt="excellence" className="parallx-img" />
         </div>
-        <div className="center-block thalion">
-            <div className="center-content-wrapper thalion">
-                    <h3 className="h3-thalion">Le bonheur est dans les pieds</h3>
-                    <p className="p-thalion">
+        <div className="center-block reflexop">
+            <div className="center-content-wrapper reflexop">
+                    <h3 className="h3-reflexop">Le bonheur est dans les pieds</h3>
+                    <p className="p-reflexop">
                         C&apos;est un moyen naturel qui stimule et équilibre l&apos;organisme. <br></br>
                         C&apos;est une thérapie qui consiste à traiter différents troubles par des pressions sur les pieds.<br></br>
                         <br></br>Resultats : <br></br>

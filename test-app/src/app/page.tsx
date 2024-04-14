@@ -69,7 +69,7 @@ gsap.to(".box", {
         <Epilations />
         <SoinVisage />
         <ReflexologiePlantaire />
-        {/* <Thalion /> */}
+        <Thalion />
       </div>
     </div>
    )
