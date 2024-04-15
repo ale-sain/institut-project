@@ -33,10 +33,7 @@
     z-index: 2;
     min-height: 1px;
     mix-blend-mode: unset !important;
-    /* background-color: aqua; */
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
+
   
 }
 
@@ -50,14 +47,11 @@
     margin-right:auto;
     line-height:0;
     position: relative;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
 }
 
 .img-wrapper-t {
-    width: 600px; /* Largeur fixe */
-    height: 800px; /* Hauteur fixe */
+    width: 600px; 
+    height: 800px; 
     /* overflow: hidden; */
     position: relative; /* Nécessaire pour le positionnement correct de l'image */
   }
@@ -65,8 +59,8 @@
   .image-thalion {
     /* width: 100%;
     height: 100%; */
-    object-fit: cover; /* Garantit que l'image couvre entièrement le conteneur sans être déformée */
-    object-position: right; /* Centrer l'image dans le conteneur */
+    object-fit: cover;
+    object-position: right;
   }
 .grid-item-t.right {
     /* background-color: aquamarine; */
@@ -150,90 +144,47 @@
     font-style: normal;
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1100px) {
     .h2-thalion {
         color:red;
     }
 
     .section-t {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        min-height: 750px;
+        margin-top: 600px;
         padding: 50px 0;
-        position: relative;
-        background-color: #fff;
-        background-position: 50%;
-        background-size: 100%;
-        background-size: cover;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
+        background-color: #a0a0a0;
     }
 
     .grid-t {
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-        display: flex;
         width: 100%;
         padding: 30px 0;
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        margin: auto;
-        position: relative;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
+        left:0;
+        display:flex;
+        background-color: aquamarine;
     }
 
     .grid-item-t {
-        margin-bottom:0;
-        width:100%;
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        float:left;
-        position: relative;
-        z-index: 2;
-        min-height: 1px;
-        mix-blend-mode: unset !important;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
+        width:50%;
+        height: auto;
+        background-color: rgb(41, 102, 82);
     }
 
     .wrapper-wrapper-t {
-        margin-bottom:0;
         margin-right: 9px !important;
-        width: 100%;
-        text-align: left;
-        margin-left: 0;
-        display: block;
-        line-height: 0;
-        position: relative;
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        font-size: 15px !important;
-        font-weight: 300;
+        background-color: blueviolet;
     }
 
     .img-wrapper-t {
-        display: inline-block;
+        width: 100%;
+        height: auto;
         position: relative;
-        max-width: 100%;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
+        background-color: chartreuse;
     }
 
     .image-thalion {
+        width: 100%;
         height: auto;
-        vertical-align: middle;
+        object-fit: contain;
     }
 
     .grid-item-t.right {
@@ -246,18 +197,6 @@
         display: flex;
         align-content: flex-end;
         flex-wrap: wrap !important;
-        width: 100%;
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        float:left;
-        position: relative;
-        z-index: 2;
-        min-height: 1px;
-        mix-blend-mode: unset !important;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
     }
 
     .container-title {
@@ -268,19 +207,36 @@
         margin-left: -1px !important;
         word-wrap: break-word;
         position: relative;
-        background-size: cover;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
     }
 
     .wrapper-t {
         padding-bottom: 0;
         position: relative;
-        font-size: 15px !important;
-        line-height: 30px;
-        font-weight: 300;
+    }
+
+    .grid-text {
+        padding-top: 0px !important;
+        margin-top: -98px !important;
+        padding: 30px 0;
+        max-width: 1080px;
+        width:80%;
+        margin:auto;
+        position:relative;
+    }
+
+    .container-text {
+        margin-bottom: 0;
+        margin-right: 0 !important;
+        width: 100%;
+        float : left;
+        position: relative;
+        z-index: 2;
+        min-height: 1px;
+    }
+
+    .wrapper-on {
+        margin-bottom: 30px;
+        text-align: left;
+        word-wrap: break-word;
     }
 }
