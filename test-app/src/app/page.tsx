@@ -13,6 +13,7 @@ import '../styles/list-epil.css'
 import SoinVisage from './soin-visage'
 import Thalion from './thalion'
 import ReflexologiePlantaire from './reflexo-1'
+import ReflexopSpeech from './reflexo-2'
 
 export default function Home() {
   useEffect(() => {
@@ -69,6 +70,7 @@ gsap.to(".box", {
         <Epilations />
         <SoinVisage />
         <ReflexologiePlantaire />
+        <ReflexopSpeech />
         <Thalion />
       </div>
     </div>

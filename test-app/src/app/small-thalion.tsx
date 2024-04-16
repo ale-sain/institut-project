@@ -34,11 +34,11 @@ export default function SmallThalion() {
                     <div className="wrapper-on">
                         <div className="wrapper-t paragraph grey">
                             <p className="p-thalion">
-                                Equilibrée par nature, la mer est un jardin extraordinaire où nous retrouvons notre mémoire et notre histoire.
+                                {/* Equilibrée par nature, la mer est un jardin extraordinaire où nous retrouvons notre mémoire et notre histoire. */}
                                 Puissant milieu de vie, la mer est une merveille thérapeutique : réhydratation, régularisation ionique, recalcification, augmentation des échanges métaboliques, stimulation des défenses de l&apos;organisme.
                                 <br></br>Implantée au coeur de la Mer d&apos;Iroise, THAL&apos;ION bénéficie des meilleures algues et des meilleurs lieux de récolte afin d&apos;en extraire les actifs les plus performants.
                                 <br></br>Les algues marines puisent dans l&apos;eau de mer leurs éléments nourriciers et développent des substances spécifiques aux propriétés extraordinaires.
-                                <br></br>Il existe une affinité particulière entre nos cellules et le milieu marin originel.
+                                {/* <br></br>Il existe une affinité particulière entre nos cellules et le milieu marin originel. */}
                                 <br></br>Spécialiste de la Cosmétique Marine THAL&apos;ION est distribuée dans plus de 45 pays et compte parmi ses clients les centres de thalassothérapie les plus prestigieux.
                             </p>
                         </div>

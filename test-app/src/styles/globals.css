@@ -28,7 +28,7 @@ body {
 
 .container {
   max-width: 1440px;
-  padding: 112px 5vw;
+  padding: 112px 4vw;
 }
 
 .grid {
@@ -71,6 +71,7 @@ h2 {
   font-weight: 300;
   line-height: 1.4;
 }
+
 
 p {
   margin-bottom: 20px;

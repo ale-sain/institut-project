@@ -1,0 +1,108 @@
+.paragraph.speech {
+    font-family: 'Bad script', cursive;
+    font-size:24px;
+    line-height:1.2;
+    /* background-color: darksalmon; */
+}
+
+.grid-item._50.speech {
+    /* background-color: rgb(55, 180, 180); */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius:10px; */
+}
+
+.grid-item._50.speech.left {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    /* border-bottom-left-radius: 30px;   */
+    /* background-color: rgb(182, 106, 106); */
+}
+
+.grid-item._50.speech.right {
+    padding:0;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    /* border-top-right-radius: 30px;   */
+    /* background-color: rgb(106, 146, 182); */
+}
+
+.container.speech {
+    /* background-color: aqua; */
+}
+
+.grid.speech {
+    /* background-color: yellow; */
+}
+
+.grid-item.speech {
+    /* background-color: red; */
+}
+
+.presta-left-wrapper.speech {
+    padding: 30px 20px;
+    /* padding-top: 30px; */
+    /* background-color: green; */
+    height:85%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.h2-speech {
+    /* background-color: azure; */
+}
+
+.presta-img-wrapper.speech {
+    width: 100%;  /* Assurez que l'image prend toute la largeur de .grid-item */
+    height: 100%; /* Assurez que l'image prend toute la hauteur de .grid-item */
+    object-fit: cover;
+  /* border-top-right-radius: 30px;  */
+}
+
+@media screen and (max-width: 1024px) {
+    .section.speech {
+        margin-top:50rem;
+    }
+
+    .h2-speech {
+        font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .paragraph.speech {
+        font-family: 'Bad script', cursive;
+        font-size:24px;
+        line-height:1.2;
+        /* background-color: darksalmon; */
+        font-size: clamp(20px, 2vw, 24px);
+    }
+
+    .grid.speech {
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid-item._50.speech {
+        /* background-color: rgb(55, 180, 180); */
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        /* border-radius:10px; */
+    }
+
+    .grid-item.speech:first-child {
+        order: 2; /* Le premier élément dans le code HTML prend la deuxième place visuellement */
+      }
+      
+      .grid-item.speech:last-child {
+        order: 1; /* Le deuxième élément dans le code HTML prend la première place visuellement */
+      }
+    
+      .presta-left-wrapper.speech {
+        padding: 10px 20px;
+        height:100%;
+      }
+    
+}

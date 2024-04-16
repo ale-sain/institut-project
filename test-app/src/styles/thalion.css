@@ -146,39 +146,38 @@
 
 @media screen and (max-width: 1100px) {
     .h2-thalion {
-        color:red;
+        color:rgb(0, 0, 0);
+        line-height:1.2;
+        font-size: clamp(26px, 4vw, 40px);
+    }
+
+    .p-thalion {
+        font-size: clamp(14px, 2vw, 16px);
     }
 
     .section-t {
         margin-top: 600px;
-        padding: 50px 0;
-        background-color: #a0a0a0;
     }
 
     .grid-t {
         width: 100%;
-        padding: 30px 0;
+        padding: 20px 0;
         left:0;
         display:flex;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
     }
 
     .grid-item-t {
         width:50%;
         height: auto;
-        background-color: rgb(41, 102, 82);
-    }
-
-    .wrapper-wrapper-t {
-        margin-right: 9px !important;
-        background-color: blueviolet;
+        /* background-color: rgb(41, 102, 82); */
     }
 
     .img-wrapper-t {
         width: 100%;
         height: auto;
         position: relative;
-        background-color: chartreuse;
+        /* background-color: chartreuse; */
     }
 
     .image-thalion {
@@ -188,40 +187,38 @@
     }
 
     .grid-item-t.right {
-        margin-bottom: 0;
-        margin-right: 0 !important;
-        bottom: 0px;
         top: auto;
         left: 0px;
-        right: auto;
-        display: flex;
-        align-content: flex-end;
-        flex-wrap: wrap !important;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        /* background-color: chocolate; */
     }
 
     .container-title {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
         text-align: left;
         min-height: 91px;
-        margin-right: 4px !important;
-        margin-left: -1px !important;
-        word-wrap: break-word;
-        position: relative;
+        max-width:450px;
+        margin-left:-5px !important;
+        margin-bottom:-5px !important;
+        margin-right:15%;
+        /* background-color: #a0a0a0; */
     }
 
     .wrapper-t {
         padding-bottom: 0;
         position: relative;
+        /* background-color: cornflowerblue; */
     }
 
     .grid-text {
         padding-top: 0px !important;
-        margin-top: -98px !important;
-        padding: 30px 0;
-        max-width: 1080px;
-        width:80%;
+        width:85%;
         margin:auto;
         position:relative;
+        /* background-color: #7a3030; */
     }
 
     .container-text {
@@ -232,11 +229,14 @@
         position: relative;
         z-index: 2;
         min-height: 1px;
+        /* background-color: rgb(243, 247, 17); */
     }
 
     .wrapper-on {
         margin-bottom: 30px;
         text-align: left;
         word-wrap: break-word;
+        text-align: justify;
+        /* background-color: darkseagreen; */
     }
 }
