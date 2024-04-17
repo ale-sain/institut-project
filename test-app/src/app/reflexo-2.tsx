@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FootImg from '../img/footdraw.jpg'
+import FootImg from '../img/footdrawbg.jpg'
 import '../styles/reflexop-2.css'
 
 export default function ReflexopSpeech() {
