@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import '../styles/list-soin.css'
 import { useState } from 'react'
@@ -18,7 +19,9 @@ export default function ListSoin({ list }) {
     <div className="specialist-wrapper soin">
       <div className="w-dyn-items" role="list">
         {list && list.map((section, index) => (
-          <React.Fragment key={index}>
+          // <React.Fragment key={index}>
+          <div key={index}>
+
             <label htmlFor={`check-${index}`} className="w-dyn-item" role="listitem" onClick={() => toggleArrow(index)}>
               <div className="specialist-item soin w-inline-block">
                 <div className="specialist-link-wrapper soin">
@@ -37,7 +40,8 @@ export default function ListSoin({ list }) {
             </label>
             <input id={`check-${index}`} type="checkbox" />
             <div className="description">{section.description}</div>
-          </React.Fragment>
+            </div>
+          // </React.Fragment>
         ))}
       </div>
     </div>

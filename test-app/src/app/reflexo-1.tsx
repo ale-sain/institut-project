@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import PiedImg from '../img/pied2.jpg'
 import ReflexoImg from '../img/carte2.jpg'

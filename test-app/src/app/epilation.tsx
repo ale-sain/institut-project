@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import ListEpilation from './list-epil'
 import ShavedLegs from '../img/shavedlegs.jpg'

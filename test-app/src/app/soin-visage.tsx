@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import ListSoin from './list-soin'
 import TowelImg from '../img/towels.jpeg'

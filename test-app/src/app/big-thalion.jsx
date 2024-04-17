@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import '../styles/thalion.css'
 import Image from 'next/image'
@@ -10,7 +11,15 @@ export default function BigThalion() {
                 <div className="grid-item-t left">
                     <div className="wrapper-wrapper-t">
                         <span className="img-wrapper-t">
-                            <Image className="image-thalion" src={AlguesImg} alt="thalion algues" width="600" height="800" />
+                            <Image 
+                                className="image-thalion" 
+                                src={AlguesImg} 
+                                alt="thalion algues" 
+                                width="600" 
+                                height="800"
+                                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wQAAwAB/ur0hVkAAAAASUVORK5CYII="
+                 />
                         </span>              
                     </div>
                 </div>

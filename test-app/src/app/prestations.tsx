@@ -1,3 +1,4 @@
+'use client'
 import React from "react"
 import ListPrestation from "./list-presta"
 import '../styles/prestations.css'
