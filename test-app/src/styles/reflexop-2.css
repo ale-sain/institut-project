@@ -5,6 +5,12 @@
     /* background-color: darksalmon; */
 }
 
+.paragraph.speech.name {
+    display:flex;
+    justify-content: flex-end;
+    /* background-color: rgb(59, 197, 197); */
+}
+
 .grid-item._50.speech {
     /* background-color: rgb(55, 180, 180); */
     display:flex;

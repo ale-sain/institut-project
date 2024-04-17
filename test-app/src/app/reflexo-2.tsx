@@ -20,6 +20,9 @@ export default function ReflexopSpeech() {
                 <br></br><br></br>C'est un art qui se fait avec passion et un don de soi.
                 <br></br>C'est une thérapie qui m'émeut a chaque séance car il n'y a rien de plus beau qu'une personne qui vous dit "merci pour ce moment" a la fin de la séance...
               </p>
+              <p className="paragraph speech name">
+                Sophie Le Saint
+              </p>
             </div>
           </div>
           <div className="grid-item _50 speech right">
