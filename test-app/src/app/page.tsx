@@ -14,6 +14,7 @@ import SoinVisage from './soin-visage'
 import Thalion from './thalion'
 import ReflexologiePlantaire from './reflexo-1'
 import ReflexopSpeech from './reflexo-2'
+import ReflexoCranienne from './reflexo-cr'
 
 export default function Home() {
   useEffect(() => {
@@ -71,6 +72,7 @@ gsap.to(".box", {
         <SoinVisage />
         <ReflexologiePlantaire />
         <ReflexopSpeech />
+        <ReflexoCranienne />
         <Thalion />
       </div>
     </div>
