@@ -3,7 +3,7 @@
 }
 
 .container.gallery {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .procedure-gallery-wrapper {
@@ -11,13 +11,13 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-gap: 12px;
     align-items: start;
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
 }
 
 .gallery-light-box {
     width: 100%;
     overflow: hidden;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .gallery-image {
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 
 @media screen and (max-width: 1024px) {
@@ -35,6 +35,6 @@
         grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
         grid-gap: 12px;
         align-items: start;
-        background-color: forestgreen;
+        /* background-color: forestgreen; */
     }
 }
