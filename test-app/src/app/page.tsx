@@ -15,6 +15,8 @@ import Thalion from './thalion'
 import ReflexologiePlantaire from './reflexo-1'
 import ReflexopSpeech from './reflexo-2'
 import ReflexoCranienne from './reflexo-cr'
+import Onglerie from './onglerie'
+import NailGallery from './gallery'
 
 export default function Home() {
   useEffect(() => {
@@ -73,6 +75,8 @@ gsap.to(".box", {
         <ReflexologiePlantaire />
         <ReflexopSpeech />
         <ReflexoCranienne />
+        <Onglerie />
+        <NailGallery />
         <Thalion />
       </div>
     </div>
