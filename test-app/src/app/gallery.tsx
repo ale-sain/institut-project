@@ -1,53 +1,74 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
-import Nail1 from '../img/ongles/ong.jpeg'
 import '../styles/gallery.css'
+import Flickity from 'flickity';
+
+const LEFT = 0;
+const RIGHT = 1;
 
 export default function NailGallery() {
-    const [selectedImage, setSelectedImage] = useState(null); // État pour l'image sélectionnée
+    const [selectedImage, setSelectedImage] = useState(0); // État pour l'image sélectionnée
     const [isVisible, setIsVisible] = useState(false); // État pour la visibilité de l'overlay
 
-    const list = [
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'},
-        {src: '/img/ongles/ong.jpeg'}
+    const listImg = [
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ongle.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ongle.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ongle.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg',
+        '/img/ongles/ong.jpeg'
     ];
-    const handleClick = (image) => {
-        setSelectedImage(image);
+
+    const handleClickImg = (index : number) => {
         setIsVisible(true); // Rend l'overlay visible
+        setSelectedImage(index); // Sélectionne l'image
     };
 
     const handleClose = () => {
         setIsVisible(false); // Cache l'overlay
+        setSelectedImage(0);
+    };
+
+    const handleClickArrow = (direction : number, {selectedImage} : {selectedImage: number}) => {
+        if (direction === LEFT) {
+            if (selectedImage === 0) {
+                setSelectedImage(listImg.length - 1);
+            } else {
+                setSelectedImage(selectedImage - 1);
+            }
+        } else {
+            if (selectedImage === listImg.length - 1) {
+                setSelectedImage(0);
+            } else {
+                setSelectedImage(selectedImage + 1);
+            }
+        }
     };
 
     return (
@@ -56,19 +77,24 @@ export default function NailGallery() {
                 <h4 className="h4-gallerie">galerie</h4>
                 <div className="w-dyn-list">
                     <div className="procedure-gallery-wrapper w-dyn-items">
-                        {list.map((section, index) => (
-                            <a className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClick(section.src)}>
-                                <Image className="gallery-image" src={section.src} width="205" height="205" alt="Nail Art"/>
+                        {listImg.map((src, index) => (
+                            <a key={index} className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClickImg(index)}>
+                                <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
                             </a>
                         ))}
                     </div>
                 </div>
-                {isVisible && (
-                    <div className="img-shadow" onClick={handleClose} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                        <Image src={selectedImage} width="500" height="500" alt="Selected Nail Art" />
-                    </div>
-                )}
             </div>
+            {isVisible && (
+                <div className="modal-background">
+                    <div className="modal-wrapper">
+                        <button className="close-button" onClick={handleClose}>&times;</button>
+                        <div className="left-arrow"  onClick={() => handleClickArrow(LEFT, {selectedImage})}>❮</div>
+                        <div className="modal-content">{selectedImage}</div>
+                        <div className="right-arrow" onClick={() => handleClickArrow(RIGHT, {selectedImage})}>❯</div>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }

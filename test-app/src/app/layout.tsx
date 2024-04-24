@@ -23,6 +23,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Calligraffitti&family=Indie+Flower&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="flickity/css/flickity.css" media="screen"></link>
       </head>
       <body className="body">
         {/* <NavBar /> */}
