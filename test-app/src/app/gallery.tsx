@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import '../styles/gallery.css'
-import Flickity from 'flickity';
 
 const LEFT = 0;
 const RIGHT = 1;
@@ -87,13 +86,19 @@ export default function NailGallery() {
             </div>
             {isVisible && (
                 <div className="modal-background">
-                    <div className="modal-wrapper">
+                 {/* <div className="modal-wrapper"> */}
                         <button className="close-button" onClick={handleClose}>&times;</button>
                         <div className="left-arrow"  onClick={() => handleClickArrow(LEFT, {selectedImage})}>❮</div>
-                        <div className="modal-content">{selectedImage}</div>
+                        <div className="carrousel">
+                            <div className="container-carr">
+                                {listImg.map((src, index) => (
+                                    <div key={index} className="photo"  style={{ backgroundImage: `url(${src})` }}></div>
+                                    ))}
+                            </div>
+                        </div>
                         <div className="right-arrow" onClick={() => handleClickArrow(RIGHT, {selectedImage})}>❯</div>
-                    </div>
-                </div>
+                 {/* </div>  */}
+             </div>
             )}
         </div>
     )

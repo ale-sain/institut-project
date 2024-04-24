@@ -31,42 +31,91 @@
 
 /* ------------------------------------------------------------------------------------ */
 
+
+.carrousel {
+    width: 500px;
+    height:500px;
+    bordeR:solid 4px white;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    background-color: #b69871;
+    /* position:relative; */
+    z-index:100000;
+    display:flex;
+    align-items: center;
+}
+
+.container-carr {
+    width:16000px;
+    height:500px;
+    display:flex;
+    flex-wrap:nowrap;
+    overflow-x: scroll;
+    /* z-index:1000000; */
+}
+
+.photo {
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+
+}
+
+.right-arrow:hover, .left-arrow:hover {
+    transform:scale(1.1);
+    opacity:1;
+    transition: all 0.6 ease;
+}
+
+/* .left-arrow {
+    left: 0;
+    opacity: 0.4;
+}
+
+.right-arrow {
+    right: 0;
+    opacity: 0.4;
+} */
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .modal-background {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100000; /* High z-index to overlay on top */
+    z-index: 10000; 
 }
 
-.modal-wrapper {
+/* .modal-wrapper {
     background-color: rgba(103, 177, 177, 0.514);
     width: 100%;
     aspect-ratio: 1 / 1;
     height:100%;
-    /* max-height: 800px; */
-    z-index: 10000;
     display:flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
-}
+} */
 
 .right-arrow, .left-arrow {
     right: 10px;
     /* border: 1px solid white; */
-    background: none;
+    /* background: none; */
     color: white;
     font-size: 50px;
     cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.6 ease;
+    z-index: 10000000;
 }
 
-.modal-content {
+/* .modal-content {
     background-color: aqua;
     width: 80%;
     aspect-ratio: 1 / 1;
@@ -76,7 +125,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .close-button {
     position: absolute;
