@@ -7,17 +7,19 @@ export default function Carrousel ({ initialePosition }) {
     const nbr = 32; // Nombre total d'images
     const width = 500; // Largeur de chaque image
 
-    const moveLeft = () => {
+    const moveLeft = (e) => {
         if (position > 0) {
             setPosition(position - 1);
         }
+        e.stopPropagation();
         console.log(position);
     };
 
-    const moveRight = () => {
+    const moveRight = (e) => {
         if (position < nbr - 1) {
             setPosition(position + 1);
         }
+        e.stopPropagation();
         console.log(position);
     };
 
@@ -66,7 +68,7 @@ export default function Carrousel ({ initialePosition }) {
               transition: 'all 0.5s ease'
             }}>
                 {imageUrls.map((url, index) => (
-                  <div key={index} className="photo" style={{ backgroundImage: `url(${url})` }} />
+                  <div key={index} onClick={e => e.stopPropagation()} className="photo" style={{ backgroundImage: `url(${url})` }} />
                   ))}
             </div>
         </div>
