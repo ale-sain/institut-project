@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import '../styles/gallery.css'
-
-const LEFT = 0;
-const RIGHT = 1;
+import Carrousel from './carrousel';
+import { init } from 'next/dist/compiled/webpack/webpack';
 
 export default function NailGallery() {
     const [selectedImage, setSelectedImage] = useState(0); // État pour l'image sélectionnée
     const [isVisible, setIsVisible] = useState(false); // État pour la visibilité de l'overlay
 
     const listImg = [
-        '/img/ongles/ong.jpeg',
+        '/img/ongles/ongle.jpeg',
         '/img/ongles/ong.jpeg',
         '/img/ongles/ong.jpeg',
         '/img/ongles/ong.jpeg',
@@ -54,22 +53,6 @@ export default function NailGallery() {
         setSelectedImage(0);
     };
 
-    const handleClickArrow = (direction : number, {selectedImage} : {selectedImage: number}) => {
-        if (direction === LEFT) {
-            if (selectedImage === 0) {
-                setSelectedImage(listImg.length - 1);
-            } else {
-                setSelectedImage(selectedImage - 1);
-            }
-        } else {
-            if (selectedImage === listImg.length - 1) {
-                setSelectedImage(0);
-            } else {
-                setSelectedImage(selectedImage + 1);
-            }
-        }
-    };
-
     return (
         <div className="section">
             <div className='container gallery w-container'>
@@ -83,23 +66,15 @@ export default function NailGallery() {
                         ))}
                     </div>
                 </div>
-            </div>
-            {isVisible && (
+            {isVisible && 
                 <div className="modal-background">
-                 {/* <div className="modal-wrapper"> */}
+                    <div className="modal-wrapper">
                         <button className="close-button" onClick={handleClose}>&times;</button>
-                        <div className="left-arrow"  onClick={() => handleClickArrow(LEFT, {selectedImage})}>❮</div>
-                        <div className="carrousel">
-                            <div className="container-carr">
-                                {listImg.map((src, index) => (
-                                    <div key={index} className="photo"  style={{ backgroundImage: `url(${src})` }}></div>
-                                    ))}
-                            </div>
-                        </div>
-                        <div className="right-arrow" onClick={() => handleClickArrow(RIGHT, {selectedImage})}>❯</div>
-                 {/* </div>  */}
-             </div>
-            )}
+                        <Carrousel initialePosition={ selectedImage } />
+                    </div>
+                </div>
+            }
+            </div>
         </div>
     )
 }

@@ -17,6 +17,7 @@ import ReflexopSpeech from './reflexo-2'
 import ReflexoCranienne from './reflexo-cr'
 import Onglerie from './onglerie'
 import NailGallery from './gallery'
+import Carrousel from './test/page'
 
 export default function Home() {
   useEffect(() => {
