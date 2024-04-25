@@ -5,11 +5,11 @@ import '../styles/carrousel.css'; // Assurez-vous que le CSS est correctement im
 export default function Carrousel ({ initialePosition }) {
     const [position, setPosition] = useState(initialePosition);
     const nbr = 32; // Nombre total d'images
-    const [width, setWidth] = useState(window.innerWidth > 1024 ? 500 : 300);
+    const [width, setWidth] = useState(window.innerWidth > 1024 ? 600 : 300);
 
     useEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerWidth > 1024 ? 500 : 300);
+            setWidth(window.innerWidth > 1024 ? 600 : 300);
         };
 
         window.addEventListener('resize', handleResize);
@@ -74,12 +74,12 @@ export default function Carrousel ({ initialePosition }) {
         <div id="carrousel">
             <div id="container-carr" 
             style={{
-              width: `${500 * nbr}px`,
+              width: `${600 * nbr}px`,
               transform: `translate(-${position * width}px)`,
               transition: 'all 0.5s ease'
             }}>
                 {imageUrls.map((url, index) => (
-                  <div key={index} onClick={e => e.stopPropagation()} className="photo" style={{ backgroundImage: `url(${url})` }} />
+                  <div key={index} onClick={moveRight} className="photo" style={{ backgroundImage: `url(${url})` }} />
                   ))}
             </div>
         </div>

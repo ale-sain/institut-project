@@ -1,7 +1,7 @@
 
 #carrousel{
-	max-width:500px;
-	max-height:500px;
+	max-width:600px;
+	max-height:600px;
 	box-shadow:0 0 14px rgba(0,0,0,0.3);
 	position:relative;
 	overflow:hidden;
@@ -10,20 +10,21 @@
 }
 
 #container-carr{
-	width:500px;
-	height:500px;
+	width:600px;
+	height:600px;
 }
 .photo{
-	width:500px;
-	height:500px;
+	width:600px;
+	height:600px;
 	margin:0;
 	display:inline-block;
 	background-size:cover;
+	cursor:pointer;
 }
 
 .arrow {
     position:absolute;
-    font-size:8vw;
+    font-size:70px;
     cursor:pointer;
     color:rgb(255, 255, 255);
 	z-index:1000000;

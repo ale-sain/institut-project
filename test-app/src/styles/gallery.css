@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.container.gallery {
+    /* background-color: aquamarine; */
+}
+
 .procedure-gallery-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -33,7 +37,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.9); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,12 +54,30 @@
     position: relative;
 }
 
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    opacity:0.4;
+}
+
+.close-button:hover {
+	transform: scale(1.1);
+	opacity:1;
+	transition:all 0.3s ease;
+}
+
 .gallery-image {
     transition: transform 0.3s ease; /* Smooth scaling transition */
 }
 
 .gallery-light-box:hover .gallery-image {
-    transform: scale(1.35); /* Slight zoom effect on hover */
+    transform: scale(1.55); /* Slight zoom effect on hover */
     cursor:pointer;
 }
 
