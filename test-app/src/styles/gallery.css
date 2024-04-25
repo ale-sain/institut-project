@@ -2,10 +2,6 @@
     text-align: center;
 }
 
-.container.gallery {
-    /* background-color: aquamarine; */
-}
-
 .procedure-gallery-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -45,7 +41,6 @@
 }
 
 .modal-wrapper {
-    background-color: rgba(103, 177, 177, 0.514);
     width: 100%;
     aspect-ratio: 1 / 1;
     height:100%;
@@ -54,18 +49,6 @@
     align-items: center;
     position: relative;
 }
-
-/* .modal-content {
-    background-color: aqua;
-    width: 80%;
-    aspect-ratio: 1 / 1;
-    max-width: 600px;
-    max-height: 600px;
-    z-index: 10000;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .gallery-image {
     transition: transform 0.3s ease; /* Smooth scaling transition */

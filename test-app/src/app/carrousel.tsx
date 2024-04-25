@@ -1,11 +1,22 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/carrousel.css'; // Assurez-vous que le CSS est correctement importé
 
 export default function Carrousel ({ initialePosition }) {
     const [position, setPosition] = useState(initialePosition);
     const nbr = 32; // Nombre total d'images
-    const width = 500; // Largeur de chaque image
+    const [width, setWidth] = useState(window.innerWidth > 1024 ? 500 : 300);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth > 1024 ? 500 : 300);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const moveLeft = (e) => {
         if (position > 0) {

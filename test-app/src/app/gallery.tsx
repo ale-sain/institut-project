@@ -69,7 +69,6 @@ export default function NailGallery() {
             {isVisible && 
                 <div className="modal-background" onClick={handleClose}>
                     <div className="modal-wrapper">
-                        {/* <button className="close-button" onClick={handleClose}>&times;</button> */}
                         <Carrousel initialePosition={ selectedImage }/>
                     </div>
                 </div>

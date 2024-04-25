@@ -1,7 +1,7 @@
 
 #carrousel{
-	width:500px;
-	height:500px;
+	max-width:500px;
+	max-height:500px;
 	box-shadow:0 0 14px rgba(0,0,0,0.3);
 	position:relative;
 	overflow:hidden;
@@ -51,4 +51,15 @@
 	transform:scale(1.1);
 	opacity:1;
 	transition:all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    #carrousel, #container-carr, .photo {
+        width: 300px;
+        height: 300px;
+    }
+
+	.arrow {
+		font-size: 12vw;
+	}
 }
