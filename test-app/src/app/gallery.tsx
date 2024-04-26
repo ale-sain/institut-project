@@ -54,7 +54,8 @@ export default function NailGallery() {
     };
 
     return (
-        <div className="section">
+        // <div className="section">
+        <>
             <div className='container gallery w-container'>
                 <h4 className="h4-gallerie">galerie</h4>
                 <div className="w-dyn-list">
@@ -75,6 +76,7 @@ export default function NailGallery() {
                 </div>
             }
             </div>
-        </div>
+        {/* </div> */}
+    </>
     )
 }

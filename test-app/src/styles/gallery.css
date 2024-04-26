@@ -2,8 +2,8 @@
     text-align: center;
 }
 
-.container.gallery {
-    /* background-color: aquamarine; */
+.container.gallery.w-container {
+    padding-top:0;
 }
 
 .procedure-gallery-wrapper {

@@ -33,9 +33,11 @@
 
     .center-block {
         height:750px;
+        width:100%;
         background-image: url('../img/pied2.jpg');
         background-attachment: fixed;
         background-position: bottom;
+        background-size: cover;
         background-repeat: no-repeat;
         display:flex;
         justify-content: center;

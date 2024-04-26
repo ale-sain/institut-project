@@ -23,13 +23,6 @@ export default function SmallThalion() {
                     </div>
                 </div>
             </div>
-            {/* <div className="grid-line">
-                <div className="container-line">
-                    <div className="wrapper-line">
-                        <div className="line"></div>
-                    </div>
-                </div>
-            </div>  */}
             <div className="grid-text">
                 <div className="container-text">
                     <div className="wrapper-on">

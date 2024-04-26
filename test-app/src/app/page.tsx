@@ -18,6 +18,7 @@ import ReflexoCranienne from './reflexo-cr'
 import Onglerie from './onglerie'
 import NailGallery from './gallery'
 import Carrousel from './test/page'
+import Footer from './footer'
 
 export default function Home() {
   useEffect(() => {
@@ -77,8 +78,8 @@ gsap.to(".box", {
         <ReflexopSpeech />
         <ReflexoCranienne />
         <Onglerie />
-        <NailGallery />
         <Thalion />
+        <Footer />
       </div>
     </div>
    )

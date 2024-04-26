@@ -1,0 +1,85 @@
+.section.footer {
+    /* margin-top: 5rem; */
+}
+
+.full-section-image.footer {
+    width:100%;
+    min-height: 600px;
+    background-color: blueviolet;
+    background-image: url("../img/institut2.jpeg");
+    background-position: right;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 112px;
+    padding: 104px;
+    display: flex;
+    position: relative;
+}
+
+.center-content-wrapper.footer {
+    padding: 64px;
+    max-width: 670px;
+    /* background-color: #876d9e; */
+} 
+
+.center-content-wrapper.center-aligment.footer {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: flex-start; */
+    /* background-color: rgb(98, 136, 168); */
+}
+
+.content-footer {
+    /* margin-top: 16px; */
+    /* background-color: rgb(173, 250, 250); */
+    width:100%;
+    height:auto;
+}
+
+.wrapper-footer {
+    /* background-color: #d4b388; */
+    margin-bottom:20px;
+    width:100%;
+    height:auto;
+}
+
+.p-footer {
+    margin: 0;
+}
+
+.p-footer.heavy {
+    font-weight: 600;
+    /* color:red; */
+}
+
+@media screen and (max-width: 1024px) {
+    .center-content-wrapper.footer {
+        padding:32px;
+    }
+
+    .h2-footer {
+        font-size:28px;
+        /* background-color: bisque; */
+    }
+
+    .decorative.footer {
+        font-size: clamp(18px, 4vw, 24px);
+        margin:0;
+        /* background-color: aqua; */
+    }
+
+    .full-section-image.footer {
+        padding:56px;
+    }
+
+    .p-footer {
+        line-height:1.4;
+        font-size:15px;
+    }
+
+    .wrapper-footer {
+        margin-bottom:15px;
+    }
+}

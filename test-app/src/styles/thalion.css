@@ -2,11 +2,10 @@
 .section-t {
     padding-top: 0px;
     position: relative;
-    background-position: 50%;
-    background-size: 100%;
-    background-size: cover;
+    background-color: aqua;
+    height:800px;
+    margin-bottom:5rem;
 }
-
 
 .grid-t {
     padding-top: 3px !important;
@@ -20,6 +19,7 @@
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
+    background-color: aquamarine;
   
 }
 
@@ -85,6 +85,7 @@
 .wrapper-t {
     padding-bottom:0;
     position:relative;
+    background-color: blue;
 }
 
 .container-text {
@@ -94,6 +95,7 @@
     /* word-wrap: break-word; */
     position:relative;
     /* background-color: antiquewhite; */
+    background-color: coral;
 }
 
 .p-thalion {

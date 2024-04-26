@@ -3,6 +3,7 @@ import Image from 'next/image'
 import OngleImg from '../img/ongles/ongle.jpeg'
 import '../styles/onglerie.css'
 import ListEpilation from './list-epil'
+import NailGallery from './gallery'
 
 export default function Onglerie() {
     const tarifsMains = [
@@ -78,6 +79,7 @@ export default function Onglerie() {
             </div>
         </div>
       </div>
+      <NailGallery />
     </div>
   </>
   );
