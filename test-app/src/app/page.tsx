@@ -19,6 +19,7 @@ import Onglerie from './onglerie'
 import NailGallery from './gallery'
 import Carrousel from './test/page'
 import Footer from './footer'
+import SoinRegard from './soin-regard'
 
 export default function Home() {
   useEffect(() => {
@@ -74,6 +75,7 @@ gsap.to(".box", {
         <Prestations />
         <Epilations />
         <SoinVisage />
+        <SoinRegard />
         <ReflexologiePlantaire />
         <ReflexopSpeech />
         <ReflexoCranienne />
