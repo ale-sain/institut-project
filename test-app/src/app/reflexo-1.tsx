@@ -8,7 +8,7 @@ import '../styles/reflexop-1.css'
 export default function ReflexologiePlantaire() {
   return (
     <>
-    <div className="container w-container reflexop">
+    <div className="container w-container reflexop" id="reflexologie-plantaire">
         <div className="grid">
             <div className="grid-item _50 reflexop">
                 <div className="presta-right-wrapper reflexop">
@@ -21,7 +21,7 @@ export default function ReflexologiePlantaire() {
             </div>
         </div>
     </div>
-    <div id="reflexologie" className="section triplets">
+    <div className="section triplets">
     <div className="two-images-wrapper">
         <div className="big-img">
             <Image src={PiedImg} alt="water" className="parallx-img" />

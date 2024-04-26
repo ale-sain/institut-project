@@ -26,7 +26,7 @@ export default function Onglerie() {
 
   return (
     <>
-    <div className="section">
+    <div className="section" id="onglerie">
       <div className="container w-container">
         <div className="grid">
           <div className="grid-item _50 onglerie">

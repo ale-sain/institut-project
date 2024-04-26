@@ -8,7 +8,7 @@ export default function ListPrestation() {
     <div className="specialist-wrapper">
         <div className="w-dyn-items" role="list">
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#epilation" onClick={(e) => { e.preventDefault(); smoothScrollTo('epilation'); }}>
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo('epilation'); }}>
                     <div className="specialist-link-wrapper">
                         Epilations →
                     </div>
@@ -16,7 +16,7 @@ export default function ListPrestation() {
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#soin">
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo('soin-visage'); }}>
                     <div className="specialist-link-wrapper">
                         Soins du visage →
                     </div>
@@ -24,7 +24,7 @@ export default function ListPrestation() {
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#soinregard">
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo(''); }}>
                     <div className="specialist-link-wrapper">
                         Changez votre regard →
                     </div>
@@ -32,7 +32,7 @@ export default function ListPrestation() {
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#reflexologie">
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo('reflexologie-plantaire'); }}>
                     <div className="specialist-link-wrapper">
                         Réflexologie plantaire →
                     </div>
@@ -40,7 +40,7 @@ export default function ListPrestation() {
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#reflexologie">
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo('reflexologie-cranienne'); }}>
                     <div className="specialist-link-wrapper">
                         Réflexologie cranienne →
                     </div>
@@ -48,7 +48,7 @@ export default function ListPrestation() {
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" href="#onglerie">
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo('onglerie'); }}>
                     <div className="specialist-link-wrapper">
                         Onglerie →
                     </div>

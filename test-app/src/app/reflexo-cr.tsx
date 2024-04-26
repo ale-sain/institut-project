@@ -6,7 +6,7 @@ import '../styles/reflexoc.css'
 
 export default function ReflexoCranienne() {
     return (<>
-    <div className="section">
+    <div className="section" id="reflexologie-cranienne">
       <div className="container w-container">
         <div className="grid">
           <div className="grid-item _50">

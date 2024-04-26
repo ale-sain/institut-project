@@ -34,18 +34,6 @@
     /* background-color: rgb(106, 146, 182); */
 }
 
-.container.speech {
-    /* background-color: aqua; */
-}
-
-.grid.speech {
-    /* background-color: yellow; */
-}
-
-.grid-item.speech {
-    /* background-color: red; */
-}
-
 .presta-left-wrapper.speech {
     padding: 30px 20px;
     /* padding-top: 30px; */
@@ -54,10 +42,6 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.h2-speech {
-    /* background-color: azure; */
 }
 
 .presta-img-wrapper.speech {
