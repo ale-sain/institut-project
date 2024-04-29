@@ -18,16 +18,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="true" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Calligraffitti&family=Indie+Flower&display=swap" rel="stylesheet" />
       </head>
       <body className="body">
-        {/* <NavBar /> */}
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
 .section.epil {
-    margin-top:8rem;
+    margin-top:5rem;
 }
 
 .specialist-wrapper.epil {
@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .section.epil {
+        margin-top:0;
+        margin-bottom:5rem;
+    }
     .ban-epil {
         background-image: url('../img/epil.webp');
         height: 500px;

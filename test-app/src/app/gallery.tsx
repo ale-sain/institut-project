@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import '../styles/gallery.css'
 import Carrousel from './carrousel';
-import { init } from 'next/dist/compiled/webpack/webpack';
 
 export default function NailGallery() {
     const [selectedImage, setSelectedImage] = useState(0); // État pour l'image sélectionnée

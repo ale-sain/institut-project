@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/carrousel.css'; // Assurez-vous que le CSS est correctement importé
 
-export default function Carrousel ({ initialePosition }) {
+export default function Carrousel ({ initialePosition = 0 }) {
     const [position, setPosition] = useState(initialePosition);
     const nbr = 32; // Nombre total d'images
     const [width, setWidth] = useState(window.innerWidth > 1024 ? 600 : 300);
@@ -18,7 +18,7 @@ export default function Carrousel ({ initialePosition }) {
         };
     }, []);
 
-    const moveLeft = (e) => {
+    const moveLeft = (e: any) => {
         if (position > 0) {
             setPosition(position - 1);
         }
@@ -26,7 +26,7 @@ export default function Carrousel ({ initialePosition }) {
         console.log(position);
     };
 
-    const moveRight = (e) => {
+    const moveRight = (e : any) => {
         if (position < nbr - 1) {
             setPosition(position + 1);
         }

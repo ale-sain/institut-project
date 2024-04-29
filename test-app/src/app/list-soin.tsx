@@ -1,15 +1,25 @@
-'use client'
-import React from 'react'
-import '../styles/list-soin.css'
-import { useState } from 'react'
+import React, { useState } from 'react';
+import '../styles/list-soin.css';
 
+interface ListSoinProps {
+  list: {
+      titre: string;
+      duree: string;
+      prix: string;
+      description: string;
+  }[];
+}
 
-export default function ListSoin({ list }) {
-  const [arrowStates, setArrowStates] = useState({});
+interface ArrowState {
+  [key: number]: boolean;
+}
+
+export default function ListSoin({ list }: ListSoinProps) {
+  const [arrowStates, setArrowStates] = useState<ArrowState>({});  // Utiliser le type pour l'état
 
   // Fonction pour basculer l'état d'une flèche spécifique
-  const toggleArrow = (index) => {
-    setArrowStates(prevStates => ({
+  const toggleArrow = (index: number) => {
+    setArrowStates((prevStates: ArrowState) => ({
       ...prevStates,
       [index]: !prevStates[index]  // Basculer l'état actuel pour l'index donné
     }));
@@ -19,9 +29,7 @@ export default function ListSoin({ list }) {
     <div className="specialist-wrapper soin">
       <div className="w-dyn-items" role="list">
         {list && list.map((section, index) => (
-          // <React.Fragment key={index}>
           <div key={index}>
-
             <label htmlFor={`check-${index}`} className="w-dyn-item" role="listitem" onClick={() => toggleArrow(index)}>
               <div className="specialist-item soin w-inline-block">
                 <div className="specialist-link-wrapper soin">
@@ -40,8 +48,7 @@ export default function ListSoin({ list }) {
             </label>
             <input id={`check-${index}`} type="checkbox" />
             <div className="description">{section.description}</div>
-            </div>
-          // </React.Fragment>
+          </div>
         ))}
       </div>
     </div>

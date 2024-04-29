@@ -6,6 +6,7 @@
     height: 100%;
     padding-bottom: 40px;
     padding-right: 40px;
+    /* background-color: aqua; */
 }
 
 .presta-img-wrapper {
@@ -13,6 +14,7 @@
     height: 90%;
     padding-bottom: 0;
     overflow: hidden;
+    /* background-color: blueviolet; */
 }
 
 .img-presta {
@@ -52,7 +54,8 @@ img {
     .grid-item._50 {
         width: 100%;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 0; 
+        /* background-color: antiquewhite; */
     }
 
     .grid.reverse {
@@ -61,8 +64,8 @@ img {
 
     .presta-left-wrapper {
         height: 100%;
-        padding-bottom: 0;
         padding-right: 0;
+        margin-bottom:3em;
     }
 
     .presta-img-wrapper {

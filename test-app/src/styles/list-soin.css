@@ -37,6 +37,7 @@
 @media screen and (max-width: 1024px) {
     .presta-right-wrapper {
         padding-left:0;
+        margin-bottom:3em;
     }
 
     .specialist-item.soin {

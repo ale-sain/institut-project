@@ -1,8 +1,6 @@
 'use client'
 import React from 'react'
 import '../styles/thalion.css'
-import Image from 'next/image'
-import AlguesImg from '../img/thalgue.png'
 
 export default function SmallThalion() {
   return (

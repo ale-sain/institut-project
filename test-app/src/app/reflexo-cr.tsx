@@ -6,7 +6,7 @@ import '../styles/reflexoc.css'
 
 export default function ReflexoCranienne() {
     return (<>
-    <div className="section" id="reflexologie-cranienne">
+    <div className="section">
       <div className="container w-container">
         <div className="grid">
           <div className="grid-item _50">
@@ -14,7 +14,7 @@ export default function ReflexoCranienne() {
               <Image className="img-reflexoc" src={TeteImg} alt="Head cranial reflexology woman"/>
             </div>
           </div>
-          <div className="grid-item _50">
+          <div className="grid-item _50" id="reflexologie-cranienne">
             <div className="presta-right-wrapper rfc">
               <div className="decorative rfc">Lacher le mental</div>
               <h2 className="h2-rfc">Reflexologie cranienne</h2>

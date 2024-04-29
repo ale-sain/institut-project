@@ -4,7 +4,7 @@ import '../styles/footer.css'
 export default function Footer() {
   return (
     <div className="section footer">
-        <div className="full-section-image footer">
+        <div className="full-section-image footer" id="contact">
             <div className="center-content-wrapper center-aligment footer">
                 <div className="decorative footer">A propos de l&apos;institut...</div>
                 <div className="content-footer">

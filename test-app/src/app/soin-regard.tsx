@@ -14,9 +14,9 @@ export default function SoinRegard() {
   return (
     <>
     <div className="section">
-      <div className="container w-container">
+      <div className="container w-container" id="soin-regard">
         <div className="grid">
-          <div id="soin-regard" className="grid-item _50">
+          <div className="grid-item _50">
             <div className="presta-right-wrapper regard">
               <div className="decorative">Jusqu'au bout des cils</div>
               <h2>Changez votre regard</h2>

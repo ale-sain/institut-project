@@ -24,7 +24,7 @@ export default function ListPrestation() {
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
-                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo(''); }}>
+                <a className="specialist-item w-inline-block" onClick={(e) => { e.preventDefault(); smoothScrollTo('soin-regard'); }}>
                     <div className="specialist-link-wrapper">
                         Changez votre regard →
                     </div>

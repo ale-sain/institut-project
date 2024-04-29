@@ -1,10 +1,20 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ListEpilation from './list-epil'
-import ShavedLegs from '../img/shavedlegs.jpg'
-import Image from 'next/image'
+import { useWindowSize } from 'react-use'
 
 export default function Epilations() {
+    const [isClient, setIsClient] = useState(false);
+    const { width } = useWindowSize();
+  
+    useEffect(() => {
+      setIsClient(true); // Une fois le composant monté, setIsClient sera vrai.
+    }, []);
+  
+    if (!isClient) {
+      return <div>Loading...</div>; // Ou un autre placeholder approprié pendant le chargement.
+    }
+  
     const epilations = [
         { titre: 'Sourcils', prix: '10€' },
         { titre: 'Lèvre ou menton', prix: '9€' },
@@ -40,7 +50,7 @@ export default function Epilations() {
   return (
     <>
       <div className="section epil">
-        <div className="ban-epil"></div>
+        {width > 1024 && <div className="ban-epil"></div>}
         <div id="epilation" className="container w-container">
         <div className="decorative">Prenez soin de vous</div>
             <h2>Epilations</h2>
@@ -60,6 +70,7 @@ export default function Epilations() {
                 </div>
             </div>
         </div>
+        {width <= 1024 && <div className="ban-epil"></div>}
       </div>
     </>
   )

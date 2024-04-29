@@ -29,15 +29,17 @@
 
 .outNav {
     width: 100%;
-    padding-left:10%;
-    padding-right:10%;
+    max-width: 1440px;
+    padding-left: 5vw;
+    padding-right: 5vw;
     position:fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fefbf7;
+    /* background-color: #b68a51; */
     z-index:50000;
     font-family: 'Lexend', sans-serif;
+    /* background-color: rgb(56, 133, 133); */
 }
 
 .title {
@@ -52,15 +54,16 @@
 
 .menu {
     display: grid;
-    grid-template-columns: repeat(7, auto);
+    grid-template-columns: repeat(8, auto);
     justify-content: space-evenly;
-    gap:1.8rem;
+    gap:2rem;
+    /* background-color: #969696; */
 }
 
 .item {
     color: #4d4e52;
     font-weight: 300;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     cursor: pointer;
     text-decoration: none;
     display: flex;
@@ -68,10 +71,15 @@
     text-align: center;
     flex-wrap: nowrap;
     letter-spacing: -0.3px;
+    transition: color 0.4s ease;
 }
 
 .item:hover {
     color: black !important;
+}
+
+.item.active {
+    text-decoration: underline;
 }
 
 
@@ -82,6 +90,7 @@
         padding:0;
         z-index: 500;
         height:4.5rem;
+        justify-content: space-between;
     }
 
     .bg {

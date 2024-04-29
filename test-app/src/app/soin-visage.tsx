@@ -20,15 +20,15 @@ export default function SoinVisage() {
 
   return (
     <>
-    <div className="section">
+    <div className="section" id="soin-visage">
       <div className="container w-container">
-        <div className="grid">
+        <div className="grid reverse">
           <div className="grid-item _50">
             <div className="presta-img-wrapper soin">
               <Image className="img-soin" src={TowelImg} alt="Head woman"/>
             </div>
           </div>
-          <div id="soin-visage" className="grid-item _50">
+          <div className="grid-item _50">
             <div className="presta-right-wrapper">
               <div className="decorative">Bien plus qu'un soin, une evasion</div>
               <h2>Soins du visage</h2>
