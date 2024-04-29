@@ -25,7 +25,7 @@ export default function SoinRegard() {
           </div>
           <div className="grid-item _50 regard">
             <div className="presta-img-wrapper soin regard">
-              <Image className="img-soin regard" src={eyesImg} alt="Eyes woman"/>
+              <Image className="img-soin regard" src={eyesImg} alt="Eyes woman" unoptimized={true}/>
             </div>
           </div>
         </div>

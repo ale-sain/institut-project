@@ -1,12 +1,4 @@
 
-.section-t {
-    padding-top: 0px;
-    position: relative;
-    /* background-color: aqua; */
-    height:800px;
-    margin-bottom:5rem;
-}
-
 .grid-t {
     padding-top: 3px !important;
     display: flex;
@@ -16,9 +8,6 @@
     max-width: 1400px;
     margin: auto;
     position: relative;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
     /* background-color: aquamarine; */
   
 }
@@ -33,7 +22,7 @@
     z-index: 2;
     min-height: 1px;
     mix-blend-mode: unset !important;
-
+    /* background-color: blue; */
   
 }
 
@@ -47,21 +36,22 @@
     margin-right:auto;
     line-height:0;
     position: relative;
+    /* background-color: aqua; */
 }
 
 .img-wrapper-t {
     width: 600px; 
     height: 800px; 
+    /* background-color: aquamarine; */
     /* overflow: hidden; */
     position: relative; /* Nécessaire pour le positionnement correct de l'image */
+    object-fit: contain; 
+    background-image: url('/img/l.png');
+    background-size: contain; 
+    background-position: bottom left; 
+    background-repeat: no-repeat; 
   }
 
-  .image-thalion {
-    /* width: 100%;
-    height: 100%; */
-    object-fit: cover;
-    object-position: right;
-  }
 .grid-item-t.right {
     /* background-color: aquamarine; */
     display:flex;
@@ -155,10 +145,6 @@
         font-size: clamp(14px, 2vw, 16px);
     }
 
-    .section-t {
-        margin-top: 150px;
-    }
-
     .grid-t {
         width: 100%;
         padding: 20px 0;
@@ -169,21 +155,29 @@
 
     .grid-item-t {
         width:50%;
-        height: auto;
+        height: 70vw;
         /* background-color: rgb(41, 102, 82); */
     }
-
-    .img-wrapper-t {
-        width: 100%;
-        height: auto;
-        position: relative;
-        /* background-color: chartreuse; */
+    
+    .grid-item-t.left {
+        position: relative; 
+        overflow: hidden; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start; 
     }
 
     .image-thalion {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        object-fit: contain; 
+        background-image: url('/img/thalgue.png');
+        background-size: contain; 
+        background-position: bottom left; 
+        background-repeat: no-repeat; 
     }
 
     .grid-item-t.right {
@@ -229,6 +223,7 @@
         position: relative;
         z-index: 2;
         min-height: 1px;
+        margin-bottom: 10rem;
         /* background-color: rgb(243, 247, 17); */
     }
 

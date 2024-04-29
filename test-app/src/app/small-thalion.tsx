@@ -6,14 +6,11 @@ import AlguesImg from '../img/thalgue.png'
 
 export default function SmallThalion() {
   return (
-        <div className="section-t">
+        // <div className="section-t">
+        <>
             <div className="grid-t">
                 <div className="grid-item-t left">
-                    <div className="wrapper-wrapper-t">
-                        <span className="img-wrapper-t">
-                            <Image className="image-thalion" src={AlguesImg} alt="thalion algues" />
-                        </span>              
-                    </div>
+                    <div className="image-thalion" />             
                 </div>
                 <div className="grid-item-t right">
                     <div className="container-title">
@@ -39,6 +36,7 @@ export default function SmallThalion() {
                     </div>
                 </div>
             </div>
-        </div>
+            </>
+        // </div>
   )
 }

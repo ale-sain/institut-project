@@ -8,32 +8,19 @@
     border:0;
 }
 
-.presta-right-wrapper.rfc {
-    /* margin:0; */
-    /* background-color: rgb(237, 235, 100); */
-}
-
-.decorative.rfc {
-    /* background-color: antiquewhite; */
-}
-
 .h2-rfc {
-    /* background-color: burlywood; */
     margin-bottom: 0;
 }
 
 .specialist-link-wrapper.reflexop.rfc {
-    /* background-color: rgb(53, 97, 141); */
     margin-bottom: 24px;
 }
 
 .paragraph.rfc {
-    /* background-color: darksalmon; */
     margin-bottom: 0;
 }
 
 .list-item.rfc {
-    /* background-color: rgb(35, 203, 206); */
     font-family: Lexend, sans-serif;
     font-weight: 300;
     line-height: 1.6;
@@ -41,21 +28,20 @@
 
 .p-block, .paragraph.p-block {
     font-size: 14px;
-    list-style-type: none; /* Enlève les puces par défaut */
+    list-style-type: none; 
     padding: 5px;
     margin-left:10px;
     color: #4d4e52;
-    /* text-align: justify; */
-    /* background-color: darkorchid; */
+
 }
   
   li {
-    padding-left: 20px; /* Espace pour l'icône de flèche */
+    padding-left: 20px;
     position: relative;
   }
   
   li:before {
-    content: '→'; /* Caractère Unicode pour une flèche droite */
+    content: '→'; 
     position: absolute;
     left: 0;
   }
@@ -71,6 +57,10 @@
   @media screen and (max-width: 1024px) {
     .presta-img-wrapper.soin.rfc {
         border:0;
+    }
+
+    .presta-right-wrapper.rfc {
+        padding-bottom: 0;
     }
 
   }

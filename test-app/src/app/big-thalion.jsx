@@ -6,20 +6,20 @@ import AlguesImg from '../img/l.png'
 
 export default function BigThalion() {
   return (
-        <div className="section-t">
+        // <div className="section-t">
+        <>
             <div className="grid-t">
                 <div className="grid-item-t left">
                     <div className="wrapper-wrapper-t">
                         <span className="img-wrapper-t">
-                            <Image 
+                            {/* <Image 
                                 className="image-thalion" 
                                 src={AlguesImg} 
                                 alt="thalion algues" 
                                 width="600" 
                                 height="800"
                                 placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wQAAwAB/ur0hVkAAAAASUVORK5CYII="
-                 />
+                            /> */}
                         </span>              
                     </div>
                 </div>
@@ -50,6 +50,7 @@ export default function BigThalion() {
                     </div>
                 </div>
             </div> 
-        </div>
+            </>
+        // </div>
   )
 }
