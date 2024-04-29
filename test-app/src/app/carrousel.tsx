@@ -2,7 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/carrousel.css'; // Assurez-vous que le CSS est correctement importé
 
-export default function Carrousel ({ initialePosition = 0 }) {
+interface PageProps {
+    initialePosition?: number; // `number` ou `undefined` implicitement
+  }
+
+export default function Carrousel ({ initialePosition = 0} : PageProps) {
     const [position, setPosition] = useState(initialePosition);
     const nbr = 32; // Nombre total d'images
     const [width, setWidth] = useState(window.innerWidth > 1024 ? 600 : 300);
