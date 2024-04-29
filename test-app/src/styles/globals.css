@@ -32,13 +32,6 @@ body {
   /* background-color: crimson; */
 }
 
-@media screen and (max-width: 1024px) { 
-  .container {
-    max-width: 1440px;
-    padding: 11vw 4vw;
-    /* background-color: crimson; */
-  }
-}
 .grid {
   /* background-color: aqua; */
   width: 100%;
