@@ -60,14 +60,14 @@
     }
 
     .h2-speech {
-        font-size: clamp(27px, 5.5vw, 39px);
+        font-size: clamp(24px, 5vw, 39px);
     }
 
     .paragraph.speech {
         font-family: 'Bad script', cursive;
         line-height:1.5;
         /* background-color: darksalmon; */
-        font-size: clamp(20px, 4vw, 26px);
+        font-size: clamp(20px, 3.8vw, 26px);
     }
 
     .decorative {

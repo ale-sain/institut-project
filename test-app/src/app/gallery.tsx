@@ -4,7 +4,7 @@ import '../styles/gallery.css'
 import Carrousel from './carrousel';
 
 export default function NailGallery() {
-    const [selectedImage, setSelectedImage] = useState('');
+    const [selectedImage, setSelectedImage] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
 
     const listImg = [
@@ -42,14 +42,14 @@ export default function NailGallery() {
         '/img/ongles/ong.jpeg'
     ];
 
-    const handleClickImg = (src: string) => {
+    const handleClickImg = (index: number) => {
         setIsVisible(true); // Rend l'overlay visible
-        setSelectedImage(src); // Sélectionne l'image
+        setSelectedImage(index); // Sélectionne l'image
     };
 
     const handleClose = () => {
         setIsVisible(false); // Cache l'overlay
-        setSelectedImage('');
+        setSelectedImage(0);
     };
 
     return (
@@ -59,7 +59,7 @@ export default function NailGallery() {
             <div className="w-dyn-list">
               <div className="procedure-gallery-wrapper w-dyn-items">
                 {listImg.map((src, index) => (
-                  <a key={index} className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClickImg(src)}>
+                  <a key={index} className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClickImg(index)}>
                     <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
                   </a>
                 ))}

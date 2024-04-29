@@ -1,12 +1,42 @@
-'use client'
 import React, { useState, useEffect } from 'react';
-import '../styles/carrousel.css'; // Assurez-vous que le CSS est correctement importé
+import '../styles/carrousel.css';
 
-interface PageProps {
-    initialePosition: string; // Type changé à string obligatoire
-  }
+// Définir l'interface pour les props
+interface CarrouselProps {
+  initialePosition?: number;
+}
 
-export default function Carrousel ({ initialePosition }: PageProps) {
+// Composant avec l'application du type aux props
+const Carrousel: React.FC<CarrouselProps> = ({ initialePosition = 0 }) => {
+    const [position, setPosition] = useState<number>(initialePosition);
+    const nbr = 32; // Nombre total d'images
+    const [width, setWidth] = useState<number>(window.innerWidth > 1024 ? 600 : 300);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth > 1024 ? 600 : 300);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const moveLeft = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        e.stopPropagation();
+        if (position > 0) {
+            setPosition(position - 1);
+        }
+        console.log(position);
+    };
+
+    const moveRight = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        e.stopPropagation();
+        if (position < nbr - 1) {
+            setPosition(position + 1);
+        }
+        console.log(position);
+    };
+    
     const imageUrls = [
         '../../img/ongles/ongle.jpeg',
         '../../img/ongles/ong.jpeg',
@@ -41,51 +71,19 @@ export default function Carrousel ({ initialePosition }: PageProps) {
         '../../img/ongles/ong.jpeg',
         '../../img/ongles/ong.jpeg'
     ];
-    const initialIndex = imageUrls.indexOf(initialePosition);
-    const [position, setPosition] = useState(initialIndex >= 0 ? initialIndex : 0);
-    const nbr = imageUrls.length; // Utiliser la longueur dynamique de imageUrls
-    const [width, setWidth] = useState(window.innerWidth > 1024 ? 600 : 300);
-    
-    
-    useEffect(() => {
-        const handleResize = () => {
-            setWidth(window.innerWidth > 1024 ? 600 : 300);
-        };
-        
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-    
-    const moveLeft = (e: any) => {
-        if (position > 0) {
-            setPosition(position - 1);
-        }
-        e.stopPropagation();
-        console.log(position);
-    };
-    
-    const moveRight = (e : any) => {
-        if (position < nbr - 1) {
-            setPosition(position + 1);
-        }
-        e.stopPropagation();
-        console.log(position);
-    };
-    
+
     return ( 
-        <>
+      <>
         <div id="carrousel">
             <div id="container-carr" 
             style={{
               width: `${600 * nbr}px`,
-              transform: `translate(-${position * width}px)`,
-              transition: 'all 0.5s ease'
+              transform: `translateX(-${position * width}px)`,
+              transition: 'transform 0.5s ease'
             }}>
                 {imageUrls.map((url, index) => (
                   <div key={index} onClick={moveRight} className="photo" style={{ backgroundImage: `url(${url})` }} />
-                  ))}
+                ))}
             </div>
         </div>
         <div className="left arrow" onClick={moveLeft} style={{ visibility: position === 0 ? 'hidden' : 'visible' }}>❮</div>
@@ -93,3 +91,6 @@ export default function Carrousel ({ initialePosition }: PageProps) {
         </>
     );
 };
+
+export default Carrousel;
+
