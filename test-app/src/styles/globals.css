@@ -35,7 +35,7 @@ body {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 1440px;
-    padding: 3vw 4vw;
+    padding: 4vw 4vw;
     /* background-color: crimson; */
   }
 }

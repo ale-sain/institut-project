@@ -83,11 +83,11 @@ img {
     .container {
         padding-left: 12px;
         padding-right: 12px;
-        padding-top: 0;
+        /* padding-top: 10px; */
     }
 
     .container.home {
-        margin-top:2rem;
+        margin-top:5rem;
     }
 
     .grid-item {
