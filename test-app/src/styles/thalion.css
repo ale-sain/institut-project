@@ -223,12 +223,12 @@
         position: relative;
         z-index: 2;
         min-height: 1px;
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
         /* background-color: rgb(243, 247, 17); */
     }
 
     .wrapper-on {
-        margin-bottom: 0;
+        margin-bottom: 30px;
         text-align: left;
         word-wrap: break-word;
         text-align: justify;

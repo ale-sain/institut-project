@@ -43,25 +43,21 @@ gsap.to(".box", {
   duration: 0.1,
   opacity: 1,
   ease: "expo.inOut",
-  // delay: 2.6,
-  delay:0.2,
+  delay: 2.6,
 });
 
 gsap.to("img", {
   duration: 0.1,
   opacity: 1,
   ease: "expo.inOut",
-  // delay: 2.8,
-  delay: 0.4,
+  delay: 2.8,
 });
 
 gsap.to(".box", {
-  // duration: 1.8,
-  duration: 0.5,
+  duration: 1.8,
   y: "-100%",
   ease: "expo.inOut",
-  // delay: 2.8,
-  delay: 0.4,
+  delay: 2.8,
 });
 
 //       gsap.fromTo(".nav, .about p, .about h1, .button", 

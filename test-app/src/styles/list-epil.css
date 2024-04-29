@@ -51,12 +51,11 @@
         height: 500px;
         background-size:contain;
         opacity:0.85;
-        margin-top:1em;
     }
 
     .presta-left-wrapper.epil {
         padding-top:40px;
-        padding-bottom:20px;
+        padding-bottom:40px;
     }
 }
 

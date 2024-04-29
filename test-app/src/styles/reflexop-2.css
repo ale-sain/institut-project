@@ -66,7 +66,7 @@
     .paragraph.speech {
         font-family: 'Bad script', cursive;
         line-height:1.5;
-        background-color: darksalmon;
+        /* background-color: darksalmon; */
         font-size: clamp(20px, 3.8vw, 26px);
     }
 
@@ -76,11 +76,11 @@
     .grid.speech {
         display:grid;
         grid-template-rows: 0.8fr 0.8fr;
-        background-color: thistle;
+        /* background-color: thistle; */
     }
 
     .grid-item._50.speech {
-        background-color: rgb(55, 180, 180);
+        /* background-color: rgb(55, 180, 180); */
         height:100%;
         max-height:600px;
         max-width:600px;
@@ -164,10 +164,9 @@
         /* background-color: darksalmon; */
         /* font-size: clamp(20px, 2vw, 26px); */
     }
-    
-    .paragraph.speech.name {
-        margin-bottom:-20px;
 
+    .grid-item.speech {
+        /* background-color: thistle; */
     }
 
     .presta-left-wrapper.speech {

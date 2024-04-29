@@ -45,7 +45,6 @@ export default function NailGallery() {
     const handleClickImg = (index: number) => {
         setIsVisible(true); // Rend l'overlay visible
         setSelectedImage(index); // Sélectionne l'image
-        console.log(`img clicked, index ${index}`);
     };
 
     const handleClose = () => {

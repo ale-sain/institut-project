@@ -7,7 +7,7 @@ interface CarrouselProps {
 }
 
 // Composant avec l'application du type aux props
-const Carrousel: React.FC<CarrouselProps> = ({ initialePosition }) => {
+const Carrousel: React.FC<CarrouselProps> = ({ initialePosition = 0 }) => {
     const [position, setPosition] = useState<number>(initialePosition);
     const nbr = 32; // Nombre total d'images
     const [width, setWidth] = useState<number>(window.innerWidth > 1024 ? 600 : 300);
