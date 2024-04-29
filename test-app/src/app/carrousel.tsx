@@ -1,15 +1,16 @@
-'use client'
 import React, { useState, useEffect } from 'react';
-import '../styles/carrousel.css'; // Assurez-vous que le CSS est correctement importé
+import '../styles/carrousel.css';
 
-interface PageProps {
-    initialePosition?: number; // `number` ou `undefined` implicitement
-  }
+// Définir l'interface pour les props
+interface CarrouselProps {
+  initialePosition?: number;
+}
 
-export default function Carrousel ({ initialePosition = 0} : PageProps) {
-    const [position, setPosition] = useState(initialePosition);
+// Composant avec l'application du type aux props
+const Carrousel: React.FC<CarrouselProps> = ({ initialePosition = 0 }) => {
+    const [position, setPosition] = useState<number>(initialePosition);
     const nbr = 32; // Nombre total d'images
-    const [width, setWidth] = useState(window.innerWidth > 1024 ? 600 : 300);
+    const [width, setWidth] = useState<number>(window.innerWidth > 1024 ? 600 : 300);
 
     useEffect(() => {
         const handleResize = () => {
@@ -17,24 +18,22 @@ export default function Carrousel ({ initialePosition = 0} : PageProps) {
         };
 
         window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const moveLeft = (e: any) => {
+    const moveLeft = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        e.stopPropagation();
         if (position > 0) {
             setPosition(position - 1);
         }
-        e.stopPropagation();
         console.log(position);
     };
 
-    const moveRight = (e : any) => {
+    const moveRight = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        e.stopPropagation();
         if (position < nbr - 1) {
             setPosition(position + 1);
         }
-        e.stopPropagation();
         console.log(position);
     };
 
@@ -92,3 +91,5 @@ export default function Carrousel ({ initialePosition = 0} : PageProps) {
         </>
     );
 };
+
+export default Carrousel;
