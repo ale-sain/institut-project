@@ -4,8 +4,8 @@ import '../styles/gallery.css'
 import Carrousel from './carrousel';
 
 export default function NailGallery() {
-    const [selectedImage, setSelectedImage] = useState(0); // État pour l'image sélectionnée
-    const [isVisible, setIsVisible] = useState(false); // État pour la visibilité de l'overlay
+    const [selectedImage, setSelectedImage] = useState('');
+    const [isVisible, setIsVisible] = useState(false);
 
     const listImg = [
         '/img/ongles/ongle.jpeg',
@@ -42,40 +42,38 @@ export default function NailGallery() {
         '/img/ongles/ong.jpeg'
     ];
 
-    const handleClickImg = (index : number) => {
+    const handleClickImg = (src: string) => {
         setIsVisible(true); // Rend l'overlay visible
-        setSelectedImage(index); // Sélectionne l'image
+        setSelectedImage(src); // Sélectionne l'image
     };
 
     const handleClose = () => {
         setIsVisible(false); // Cache l'overlay
-        setSelectedImage(0);
+        setSelectedImage('');
     };
 
     return (
-        // <div className="section">
         <>
-            <div className='container gallery w-container'>
-                <h4 className="h4-gallerie">galerie</h4>
-                <div className="w-dyn-list">
-                    <div className="procedure-gallery-wrapper w-dyn-items">
-                        {listImg.map((src, index) => (
-                            <a key={index} className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClickImg(index)}>
-                                <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
-                            </a>
-                        ))}
-                    </div>
-                </div>
-            {isVisible && 
-                <div className="modal-background" onClick={handleClose}>
-                    <div className="modal-wrapper">
-                        <button className="close-button" onClick={handleClose}>&times;</button>
-                        <Carrousel initialePosition={ selectedImage } />
-                    </div>
-                </div>
-            }
+          <div className='container gallery w-container'>
+            <h4 className="h4-gallerie">galerie</h4>
+            <div className="w-dyn-list">
+              <div className="procedure-gallery-wrapper w-dyn-items">
+                {listImg.map((src, index) => (
+                  <a key={index} className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClickImg(src)}>
+                    <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
+                  </a>
+                ))}
+              </div>
             </div>
-        {/* </div> */}
-    </>
-    )
-}
+            {isVisible && selectedImage &&
+              <div className="modal-background" onClick={handleClose}>
+                <div className="modal-wrapper">
+                  <button className="close-button" onClick={handleClose}>&times;</button>
+                  <Carrousel initialePosition={selectedImage} />
+                </div>
+              </div>
+            }
+          </div>
+        </>
+      )
+    }
