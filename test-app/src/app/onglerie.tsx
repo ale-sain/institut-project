@@ -31,11 +31,11 @@ export default function Onglerie() {
         <div className="grid">
           <div className="grid-item _50 onglerie">
             <div className="presta-right-wrapper onglerie">
-                <div className="decorative">Jusqu'au bout des doigts</div>
+                <div className="decorative">Jusqu&apos;au bout des doigts</div>
                 <h2>Onglerie</h2>
                 <div className="wrapper-question onglerie">
                     <p className="paragraph grey rfc">
-                        J'utilise un gel organique qui n'affecte pas le metabolisme de l'ongle :
+                        J&apos;utilise un gel organique qui n&apos;affecte pas le metabolisme de l&apos;ongle :
                     </p>
                     <ul className="p-block">
                         <li className="list-item rfc">Il donne un aspect fin et naturel à vos ongles</li>
@@ -56,7 +56,7 @@ export default function Onglerie() {
                     </ul>
                 </div>
                 <p className="paragraph grey onglerie">
-                    ESSAYEZ LA <strong>POSE D'ONGLES EN GEL !</strong>
+                    ESSAYEZ LA <strong>POSE D&apos;ONGLES EN GEL !</strong>
                 </p>
             </div>
           </div>

@@ -18,7 +18,7 @@ export default function SoinRegard() {
         <div className="grid">
           <div className="grid-item _50">
             <div className="presta-right-wrapper regard">
-              <div className="decorative">Jusqu'au bout des cils</div>
+              <div className="decorative">Jusqu&apos;au bout des cils</div>
               <h2>Changez votre regard</h2>
               <ListEpilation list={soinsRegard} />
             </div>
