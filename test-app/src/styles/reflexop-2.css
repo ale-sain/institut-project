@@ -164,9 +164,10 @@
         /* background-color: darksalmon; */
         /* font-size: clamp(20px, 2vw, 26px); */
     }
+    
+    .paragraph.speech.name {
+        margin-bottom:-20px;
 
-    .grid-item.speech {
-        /* background-color: thistle; */
     }
 
     .presta-left-wrapper.speech {

@@ -45,6 +45,7 @@ export default function NailGallery() {
     const handleClickImg = (index: number) => {
         setIsVisible(true); // Rend l'overlay visible
         setSelectedImage(index); // Sélectionne l'image
+        console.log(`img clicked, index ${index}`);
     };
 
     const handleClose = () => {
@@ -65,7 +66,7 @@ export default function NailGallery() {
                 ))}
               </div>
             </div>
-            {isVisible && selectedImage &&
+            {isVisible &&
               <div className="modal-background" onClick={handleClose}>
                 <div className="modal-wrapper">
                   <button className="close-button" onClick={handleClose}>&times;</button>
