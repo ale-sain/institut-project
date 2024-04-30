@@ -28,54 +28,54 @@ export default function Home() {
       duration: 0.6,
       width: 'calc(6% - 1px)',
       ease: "power1.in",
-      delay: 1.6,
+      delay: 1.2,
       stagger: 0.03
     });
 
     gsap.to(".loader", {
-      duration: 1,
+      duration: 0.6,
       x: 2,
       opacity: 0,
       ease: "expo.inOut",
-      delay: 1.2,
+      delay: 0.8,
     });
 
       gsap.to(".box", {
         duration: 0.1,
         opacity: 1,
         ease: "expo.inOut",
-        delay: 2.2,
+        delay: 2,
       });
 
       gsap.to("img", {
         duration: 0.1,
         opacity: 1,
         ease: "expo.inOut",
-        delay: 2.4,
+        delay: 2.2,
       });
 
       gsap.to(".box", {
         duration: 1.8,
         y: "-100%",
         ease: "expo.inOut",
-        delay: 2.4,
+        delay: 2.2,
       });
 
       gsap.fromTo(".nav, .about p, .about h1, .button", 
       { opacity: 0, y: 30 },
-      { duration: 2, opacity: 10, y: 0, ease: "expo.inOut", delay: 1.8, stagger: 0.06 } // État d'arrivée
+      { duration: 2, opacity: 10, y: 0, ease: "expo.inOut", delay: 1.4, stagger: 0.06 } // État d'arrivée
       );
 
       gsap.fromTo(".button-container.right", 
       { opacity: 0 }, 
-      { duration: 1, opacity: 1, ease: "expo.inOut", delay: 0.5 }
+      { duration: 1, opacity: 1, ease: "expo.inOut", delay: 0.1 }
       );
 
       gsap.to("body", {
         duration: 1,
         backgroundColor: "#fefbf7", // Blanc
         ease: "none",
-        delay: 1.6, // Ajustez le délai en fonction de la durée totale de vos autres animations
+        delay: 1.2, // Ajustez le délai en fonction de la durée totale de vos autres animations
       });
 
 
