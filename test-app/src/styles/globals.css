@@ -4,8 +4,8 @@
 }
 
 body {
-  /* background-color: #bba18e; */
-  background-color: #fefbf7;
+  background-color: #bba18e;
+  /* background-color: #fefbf7; */
   color: #1b1b1b;
   font-family: 'Lexend, sans-serif';
   font-size: 14px;
@@ -58,6 +58,7 @@ body {
 .grid-item._50 {
   width:50%;
   /* background-color: #bba18e; */
+  
 }
 
 .decorative {
@@ -164,3 +165,6 @@ h4 {
   text-align: justify;
 }
 
+.decorative, h2, p.grey {
+  position: relative; 
+}

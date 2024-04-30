@@ -52,17 +52,32 @@ export default function NailGallery() {
         setSelectedImage(0);
     };
 
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+
+    const handleMouseEnter = (index) => {
+        setHoveredIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setHoveredIndex(null);
+    };
+
+
     return (
         <>
           <div className='container gallery w-container'>
             <h4 className="h4-gallerie">galerie</h4>
             <div className="w-dyn-list">
               <div className="procedure-gallery-wrapper w-dyn-items">
-                {listImg.map((src, index) => (
-                  <a key={index} className="gallery-light-box w-inline-block w-lightbox" onClick={() => handleClickImg(index)}>
+              {listImg.map((src, index) => (
+                <a key={index} 
+                  className={`gallery-light-box w-inline-block w-lightbox ${hoveredIndex === index ? 'active' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}
+                  onClick={() => handleClickImg(index)}>
                     <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
-                  </a>
-                ))}
+                </a>
+            ))}
               </div>
             </div>
             {isVisible &&
