@@ -23,6 +23,7 @@ import SoinRegard from './soin-regard'
 
 export default function Home() {
   useEffect(() => {
+    requestAnimationFrame(() => {
     gsap.to(".block", {
       duration: 0.6,
       width: 'calc(6% - 1px)',
@@ -39,31 +40,46 @@ export default function Home() {
       delay: 1.2,
     });
 
-gsap.to(".box", {
-  duration: 0.1,
-  opacity: 1,
-  ease: "expo.inOut",
-  delay: 2.6,
-});
+      gsap.to(".box", {
+        duration: 0.1,
+        opacity: 1,
+        ease: "expo.inOut",
+        delay: 2.6,
+      });
 
-gsap.to("img", {
-  duration: 0.1,
-  opacity: 1,
-  ease: "expo.inOut",
-  delay: 2.8,
-});
+      gsap.to("img", {
+        duration: 0.1,
+        opacity: 1,
+        ease: "expo.inOut",
+        delay: 2.8,
+      });
 
-gsap.to(".box", {
-  duration: 1.8,
-  y: "-100%",
-  ease: "expo.inOut",
-  delay: 2.8,
-});
+      gsap.to(".box", {
+        duration: 1.8,
+        y: "-100%",
+        ease: "expo.inOut",
+        delay: 2.8,
+      });
 
       gsap.fromTo(".nav, .about p, .about h1, .button", 
       { opacity: 0, y: 30 },
       { duration: 2, opacity: 10, y: 0, ease: "expo.inOut", delay: 1.8, stagger: 0.06 } // État d'arrivée
-    );
+      );
+
+      gsap.fromTo(".button-container.right", 
+      { opacity: 0 }, 
+      { duration: 1, opacity: 1, ease: "expo.inOut", delay: 0.5 }
+      );
+
+      gsap.to("body", {
+        duration: 1,
+        backgroundColor: "#fefbf7", // Blanc
+        ease: "none",
+        delay: 1.8, // Ajustez le délai en fonction de la durée totale de vos autres animations
+      });
+
+
+    });
 }, []);
 
   return (
