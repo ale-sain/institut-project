@@ -62,13 +62,15 @@ export default function NailGallery() {
         setHoveredIndex(null);
     };
 
-    const handleTouchStart = (index) => {
-      setHoveredIndex(index); // Démarre l'effet de survol
-  };
-  
-  const handleTouchEnd = () => {
-      setHoveredIndex(null); // Termine l'effet de survol
-  };
+    const handleTouch = (index) => {
+      // Vérifie si hoveredIndex est déjà défini à l'index, sinon le définir
+      if (hoveredIndex !== index) {
+        setHoveredIndex(index);
+      } else {
+        // Réinitialiser hoveredIndex lorsque l'utilisateur retire son doigt
+        setHoveredIndex(null);
+      }
+    };
 
 
     return (
@@ -82,8 +84,8 @@ export default function NailGallery() {
                   className={`gallery-light-box w-inline-block w-lightbox ${hoveredIndex === index ? 'active' : ''}`}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  onTouchStart={() => handleTouchStart(index)}
-                  onTouchEnd={handleTouchEnd} 
+                  onTouchStart={() => handleTouch(index)}
+                  onTouchEnd={() => setHoveredIndex(null)}
                   onClick={() => handleClickImg(index)}>
                     <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
                 </a>
