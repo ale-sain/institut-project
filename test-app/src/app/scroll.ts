@@ -1,4 +1,4 @@
-export default function smoothScrollTo(targetId: string): void {
+export default function smoothScrollTo(targetId: string, callback?: () => void): void {
     const target = document.getElementById(targetId);
     if (!target) return;
 
@@ -24,7 +24,11 @@ export default function smoothScrollTo(targetId: string): void {
         const run: number = easeInOutQuint(timeElapsed, startPosition, distance, duration);
 
         window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        } else if (callback) {
+            callback(); // Appeler le callback à la fin de l'animation
+        }
     };
 
     requestAnimationFrame(animation);

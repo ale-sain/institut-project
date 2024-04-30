@@ -6,7 +6,7 @@
 	position:relative;
 	overflow:hidden;
 	/* background-color: blueviolet; */
-	z-index:1000000;
+	z-index: 10000001;
 }
 
 #container-carr{
@@ -27,7 +27,7 @@
     font-size:70px;
     cursor:pointer;
     color:rgb(255, 255, 255);
-	z-index:1000000;
+	z-index: 10000001;
 }
 
 .left.arrow {

@@ -23,7 +23,7 @@
     right: 0;
     height:4.5rem;
     background-color: #fefbf7;
-    z-index: 1000000000;
+    z-index: 10000000;
     /* animation: slideDown 1s ease-out forwards; */
 }
 

@@ -23,6 +23,11 @@
     box-shadow: inset 0 80px #fbf5f1;
 }
 
+.specialist-item.not:hover {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .w-inline-block {
     max-width: 100%;
 }

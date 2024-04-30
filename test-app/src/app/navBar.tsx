@@ -26,6 +26,14 @@ export default function NavBar() {
         });
     };
 
+    const handleCloseMenu = () => setIsOpen(false);
+
+    const handleItemClick = (e, targetId) => {
+        e.preventDefault();
+        setIsOpen(false); // Fermer la barre de navigation avant de commencer à défiler
+        smoothScrollTo(targetId, handleCloseMenu);
+    };
+
     return (
         <nav className="nav">
             <div className="outNav">
@@ -38,14 +46,14 @@ export default function NavBar() {
                     <span></span>
                 </div>
                 <div className={`menu ${isOpen ? 'open' : ''}`}>
-                    <a className="item" href="#accueil" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('accueil'); }}>Accueil</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('epilation'); }}>Epilations</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('soin-visage'); }}>Soins du visage</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('soin-regard'); }}>Changez votre regard</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('reflexologie-plantaire'); }}>Réflexologie</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('onglerie'); }}>Onglerie</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('thalion'); }}>Thal&apos;ion</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => { e.preventDefault(); smoothScrollTo('contact'); }}>Contact</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'accueil')}>Accueil</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'epilation')}>Epilations</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'soin-visage')}>Soins du visage</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'soin-regard')}>Changez votre regard</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'reflexologie-plantaire')}>Réflexologie</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'onglerie')}>Onglerie</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'thalion')}>Thal&apos;ion</a>
+                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'contact')}>Contact</a>
                 </div>
             </div>
         </nav>

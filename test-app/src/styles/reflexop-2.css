@@ -1,7 +1,8 @@
 .paragraph.speech {
     font-family: 'Bad script', cursive;
     font-size:24px;
-    line-height:1.5;
+    line-height:1.7;
+    margin-top:0.3em;
     /* background-color: darksalmon; */
 }
 
@@ -164,13 +165,9 @@
 @media screen and (max-width: 480px) {
     .paragraph.speech {
         font-family: 'Bad script', cursive;
-        line-height:1.2;
+        line-height:1.5;
         /* background-color: darksalmon; */
         /* font-size: clamp(20px, 2vw, 26px); */
-    }
-
-    .grid-item.speech {
-        /* background-color: thistle; */
     }
 
     .presta-left-wrapper.speech {
