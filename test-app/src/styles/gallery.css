@@ -62,8 +62,8 @@
 
 .close-button {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0;
+    right: 0;
     border: none;
     background: none;
     color: white;
