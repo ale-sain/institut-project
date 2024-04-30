@@ -1,5 +1,6 @@
 .h4-gallerie {
     text-align: center;
+    position: relative;
 }
 
 .container.gallery.w-container {
