@@ -16,7 +16,7 @@
 }
 
 .about {
-    /* z-index: 30000; */
+    z-index: 30000;
     height: 100%;
     max-width: 640px;
     flex-direction: column;
@@ -27,18 +27,16 @@
 }
 
 .about h1 {
-    position: relative;
-    z-index: 30000;
     margin-top: 0;
     margin-bottom: 24px;
     font-family: Lexend, sans-serif;
     font-size: 60px;
     font-weight: 300;
     line-height: 1.2;
+    z-index:1000;
 }
 
 .about p {
-    z-index: 30000;
     color: #4d4e52;
     font-family: Lexend, sans-serif;
     font-size: 16px;
