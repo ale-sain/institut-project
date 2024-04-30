@@ -75,7 +75,7 @@ export default function Home() {
         duration: 1,
         backgroundColor: "#fefbf7", // Blanc
         ease: "none",
-        delay: 1.8, // Ajustez le délai en fonction de la durée totale de vos autres animations
+        delay: 1.6, // Ajustez le délai en fonction de la durée totale de vos autres animations
       });
 
 
