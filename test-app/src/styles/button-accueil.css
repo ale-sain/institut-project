@@ -16,8 +16,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 10em;
-    height: 10em;
+    width: 11.5em;
+    height: 11.5em;
     border-radius: 30em;
     transition: color 0.1s ease-in, border 0.1s ease-in, transform 0.1s ease-in;
     -webkit-user-select: none; /* Chrome/Safari */
@@ -99,7 +99,6 @@
 
   .button.round:hover {
     cursor:pointer;
-    display:none;
   }
 }
   

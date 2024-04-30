@@ -47,7 +47,11 @@ export default function ListSoin({ list }: ListSoinProps) {
               </div>
             </label>
             <input id={`check-${index}`} type="checkbox" />
-            <div className="description">{section.description}</div>
+            <div className="description">
+            {section.description.split('\n').map((line, idx) => (
+              <p className="p-visage" key={idx}>{line}</p>
+            ))}
+          </div>
           </div>
         ))}
       </div>
