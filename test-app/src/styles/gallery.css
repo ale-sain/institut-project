@@ -82,8 +82,7 @@
     transition: transform 0.3s ease; /* Smooth scaling transition */
 }
 
-.gallery-light-box:hover .gallery-image,
-.gallery-light-box.active .gallery-image {
+.gallery-light-box:hover .gallery-image {
     transform: scale(1.55);
     cursor: pointer;
     z-index: 2;
@@ -98,5 +97,9 @@
         grid-gap: 12px;
         align-items: start;
         /* background-color: forestgreen; */
+    }
+    .gallery-light-box:hover .gallery-image {
+        transform: none; /* Annule l'effet de zoom */
+        /* cursor: default; */
     }
 }

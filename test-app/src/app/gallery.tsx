@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
-import '../styles/gallery.css'
 import Carrousel from './carrousel';
+import '../styles/gallery.css'
 
 export default function NailGallery() {
     const [selectedImage, setSelectedImage] = useState(0);
@@ -62,15 +62,13 @@ export default function NailGallery() {
         setHoveredIndex(null);
     };
 
-    const handleTouch = (index) => {
-      // Vérifie si hoveredIndex est déjà défini à l'index, sinon le définir
-      if (hoveredIndex !== index) {
-        setHoveredIndex(index);
-      } else {
-        // Réinitialiser hoveredIndex lorsque l'utilisateur retire son doigt
-        setHoveredIndex(null);
-      }
-    };
+    // const handleTouch = (index) => {
+    //   if (hoveredIndex !== index) {
+    //     setHoveredIndex(index);
+    //   } else {
+    //     setHoveredIndex(null);
+    //   }
+    // };
 
 
     return (
@@ -84,8 +82,8 @@ export default function NailGallery() {
                   className={`gallery-light-box w-inline-block w-lightbox ${hoveredIndex === index ? 'active' : ''}`}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
-                  onTouchStart={() => handleTouch(index)}
-                  onTouchEnd={() => setHoveredIndex(null)}
+                  // onTouchStart={() => handleTouch(index)}
+                  // onTouchEnd={() => setHoveredIndex(null)}
                   onClick={() => handleClickImg(index)}>
                     <Image className="gallery-image" src={src} width="205" height="205" alt="Nail Art"/>
                 </a>
