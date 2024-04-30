@@ -55,7 +55,7 @@ export default function Epilations() {
         <div className="decorative">Prenez soin de vous</div>
             <h2>Epilations</h2>
             <p className="paragraph grey">
-                Des sourcils au maillot integral, en passant par le dos ou les jambes, toutes les epilations sont effectuees avec des cires adaptees a la zone
+                Des sourcils au maillot intégral, en passant par le dos ou les jambes, toutes les épilations sont effectuées avec des cires adaptées à la zone
             </p>
             <div className="grid">
                 <div className="grid-item _50">

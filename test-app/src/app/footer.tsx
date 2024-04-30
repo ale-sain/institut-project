@@ -6,11 +6,11 @@ export default function Footer() {
     <div className="section footer">
         <div className="full-section-image footer" id="contact">
             <div className="center-content-wrapper center-aligment footer">
-                <div className="decorative footer">A propos de l&apos;institut...</div>
+                <div className="decorative footer">À propos de l&apos;institut...</div>
                 <div className="content-footer">
-                    <h2  className="h2-footer">Institut secret de beaute</h2>
+                    <h2  className="h2-footer">Institut secrets de beauté</h2>
                     <div className="wrapper-footer">
-                        <p className="p-footer">Institut climatise</p>
+                        <p className="p-footer">Institut climatisé</p>
                         <p className="p-footer">Adresse: 10 rue du Distro, 56690 LANDEVANT</p>
                     </div>
                     <div className="wrapper-footer">

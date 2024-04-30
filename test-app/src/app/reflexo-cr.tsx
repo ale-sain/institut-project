@@ -16,8 +16,8 @@ export default function ReflexoCranienne() {
           </div>
           <div className="grid-item _50">
             <div className="presta-right-wrapper rfc">
-              <div className="decorative rfc">Lacher le mental</div>
-              <h2 className="h2-rfc">Reflexologie cranienne</h2>
+              <div className="decorative rfc">Lâcher le mental</div>
+              <h2 className="h2-rfc">Réflexologie crânienne</h2>
               <div className="specialist-link-wrapper reflexop rfc">1 HEURE, 55$</div>
               <div className="wrapper-question">
                 <p className="paragraph grey rfc">

@@ -30,10 +30,10 @@ export default function SoinVisage() {
           </div>
           <div className="grid-item _50">
             <div className="presta-right-wrapper">
-              <div className="decorative">Bien plus qu&apos;un soin, une evasion</div>
+              <div className="decorative">Bien plus qu&apos;un soin, une évasion</div>
               <h2>Soins du visage</h2>
               <p className="paragraph grey">
-                Ici c&apos;est different, c&apos;est unique...
+                Ici c&apos;est différent, c&apos;est unique...
               </p>
               <ListSoin list={soins} />
             </div>

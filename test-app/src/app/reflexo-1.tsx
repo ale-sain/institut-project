@@ -12,7 +12,7 @@ export default function ReflexologiePlantaire() {
         <div className="grid">
             <div className="grid-item _50 reflexop">
                 <div className="presta-right-wrapper reflexop">
-                    <div className="decorative">A essayer au moins une fois...</div>
+                    <div className="decorative">À essayer au moins une fois...</div>
                     <h2>Réflexologie plantaire</h2>
                     <div className="specialist-link-wrapper reflexop">
                         1 HEURE, 45$
@@ -35,12 +35,12 @@ export default function ReflexologiePlantaire() {
                     <p className="p-reflexop">
                         C&apos;est un moyen naturel qui stimule et équilibre l&apos;organisme. <br></br>
                         C&apos;est une thérapie qui consiste à traiter différents troubles par des pressions sur les pieds.<br></br>
-                        <br></br>Resultats : <br></br>
+                        <br></br>Résultats : <br></br>
                         &emsp;&emsp;- &nbsp;Soulage les tensions<br></br>
                         &emsp;&emsp;- &nbsp;Elimine les toxines<br></br>
-                        &emsp;&emsp;- &nbsp;Libere le stress<br></br>
+                        &emsp;&emsp;- &nbsp;Libère le stress<br></br>
                         &emsp;&emsp;- &nbsp;Améliore la circulation sanguine<br></br>
-                        &emsp;&emsp;- &nbsp;Retablit l&apos;equilibre<br></br>
+                        &emsp;&emsp;- &nbsp;Rétablit l&apos;équilibre<br></br>
                         &emsp;&emsp;- &nbsp;Procure une relaxation profonde<br></br>
                         <br></br>Bien plus qu&apos;un massage... UNE EVASION INCROYABLE. <br></br>
                         La manipulation sert à tester les zones réflexes ainsi qu&apos;à les traiter. Ces zones  ainsi décongestionnées vont permettre aux organes de rétablir leur irrigation et leur bon fonctionnement.

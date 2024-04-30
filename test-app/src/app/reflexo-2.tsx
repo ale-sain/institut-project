@@ -17,9 +17,9 @@ export default function ReflexopSpeech() {
                 <h2 className="h2-speech">A propos de la réflexologie...</h2>
               </div>
               <p className="paragraph speech">
-                Je suis réflexologue depuis 13 ans (déja !) et j&apos;ai été formée a l&apos;école de réflexologie de Bretagne en 2010. 
+                Je suis réflexologue depuis 13 ans (déjà !) et j&apos;ai été formée à l&apos;école de réflexologie de Bretagne en 2010. 
                 <br></br><br></br>C&apos;est un art qui se fait avec passion et un don de soi.
-                <br></br>C&apos;est une thérapie qui m&apos;émeut a chaque séance car il n&apos;y a rien de plus beau qu&apos;une personne qui vous dit &quot;merci pour ce moment&quot; a la fin de la séance...
+                <br></br>C&apos;est une thérapie qui m&apos;émeut à chaque séance car il n&apos;y a rien de plus beau qu&apos;une personne qui vous dit &quot;merci pour ce moment&quot; à la fin de la séance...
               </p>
               <p className="paragraph speech name">
                 Sophie Le Saint

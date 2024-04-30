@@ -16,8 +16,8 @@ export default function Accueil() {
               <div className="grid">
                 <div className="grid-item _60">
                   <div className="about">
-                    <h1>Bienvenue dans le monde du bien etre</h1>
-                    <p>Situe en Bretagne sur la commune de Landevant dans le Morbihan, a 2 pas du centre bourg a l&apos;abri des regards</p>
+                    <h1>Bienvenue dans le monde du bien être</h1>
+                    <p>Situé en Bretagne sur la commune de Landévant dans le Morbihan, à 2 pas du centre bourg à l&apos;abri des regards</p>
                   </div>
                 </div>
                 <div className="grid-item _40">

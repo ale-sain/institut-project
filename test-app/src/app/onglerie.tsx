@@ -35,7 +35,7 @@ export default function Onglerie() {
                 <h2>Onglerie</h2>
                 <div className="wrapper-question onglerie">
                     <p className="paragraph grey rfc">
-                        J&apos;utilise un gel organique qui n&apos;affecte pas le metabolisme de l&apos;ongle :
+                        J&apos;utilise un gel organique qui n&apos;affecte pas le métabolisme de l&apos;ongle :
                     </p>
                     <ul className="p-block">
                         <li className="list-item rfc">Il donne un aspect fin et naturel à vos ongles</li>
