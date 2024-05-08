@@ -61,7 +61,7 @@ export default function Home() {
         delay: 2.2,
       });
 
-      gsap.fromTo(".nav, .about p, .about h1, .button", 
+      gsap.fromTo(".nav, .about p, .about h1, .button, .center-wrapper", 
       { opacity: 0, y: 30 },
       { duration: 2, opacity: 10, y: 0, ease: "expo.inOut", delay: 1.4, stagger: 0.06 } // État d'arrivée
       );
