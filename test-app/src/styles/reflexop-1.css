@@ -18,12 +18,10 @@
     padding-bottom: 20px;
 }
 
-/* .parallx-img {
-    display:none;
-} */
-
 .small-img.opposite {
-    display: none;
+    box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.2);
+    height:100%;
+    width:auto;
 }
 
 @media screen and (max-width: 900px) {

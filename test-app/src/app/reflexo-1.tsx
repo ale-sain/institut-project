@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import PiedImg from '../img/pied2.jpg'
-import ReflexoImg from '../img/carte2.jpg'
+import ReflexoImg from '../img/pied30.jpeg'
 import Image from 'next/image'
 import '../styles/reflexop-1.css'
 
