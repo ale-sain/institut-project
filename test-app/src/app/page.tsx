@@ -73,9 +73,9 @@ export default function Home() {
 
       gsap.to("body", {
         duration: 1,
-        backgroundColor: "#fefbf7", // Blanc
+        backgroundColor: "#fefbf7", 
         ease: "none",
-        delay: 1.2, // Ajustez le délai en fonction de la durée totale de vos autres animations
+        delay: 1.2, 
       });
 
 

@@ -32,7 +32,7 @@ export default function ReflexoCranienne() {
               </div>
               <div className="wrapper-question">
                 <p className="paragraph grey rfc">Comment ça marche ?</p>
-                <p className="paragraph grey rfc p-block">32 points sur la tête sont touchés en douceur mettant en relation les Bars (activation de points symétriques). Une RELAXATION INTENSE libère la charge électromagnétique qui maintient en place les pensées, considérations, conclusions, attitudes, émotions et sentiments que vous avez accumulés et qui vous limitent dans différents domaines.</p>
+                <p className="paragraph grey rfc p-block">32 points sur la tête sont touchés en douceur. Une RELAXATION INTENSE libère la charge électromagnétique qui maintient en place les pensées, considérations, conclusions, attitudes, émotions et sentiments que vous avez accumulés et qui vous limitent dans différents domaines.</p>
               </div>
               <div className="wrapper-question">
                 <p className="paragraph grey rfc">

@@ -58,7 +58,7 @@ export default function Onglerie() {
                 </div>
                 <p className="paragraph grey onglerie">
                    Avec CALGEL, le gel incontournable des prothésistes ongulaires, découvrez la qualité professionnelle par excellence.
-                  <br></br>Essayez le, vous ne pourrez plus vous en passer !
+                  <br></br>Essayez le et vous ne pourrez plus vous en passer !
                 </p>
             </div>
           </div>
