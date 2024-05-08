@@ -43,7 +43,7 @@ export default function Onglerie() {
                         <li className="list-item rfc">Il est flexible, résistant et solide</li>
                     </ul>
                     <p className="paragraph grey rfc">
-                        <br></br>Ici pas de ponceuse, pas d'acide, pas d'acrylique !
+                        <br></br>Ici pas de ponceuse, pas d&apos;acide, pas d&apos;acrylique !
                     </p>
                 </div>
                 <div className="wrapper-question onglerie">

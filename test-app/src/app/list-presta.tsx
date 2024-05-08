@@ -36,7 +36,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Réflexologie plantaire →
                     </div>
-                    <p className="paragraph small wo">S'évader ailleurs</p>
+                    <p className="paragraph small wo">S&apos;évader ailleurs</p>
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
@@ -52,7 +52,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Onglerie →
                     </div>
-                    <p className="paragraph small wo">La différence c'est l'élégance</p>
+                    <p className="paragraph small wo">La différence c&apos;est l&apos;élégance</p>
                 </a>
             </div>
         </div>
