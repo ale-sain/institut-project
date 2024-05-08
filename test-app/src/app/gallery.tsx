@@ -122,7 +122,7 @@ export default function NailGallery() {
     return (
         <>
           <div className='container gallery w-container'>
-            <h4 className="h4-gallerie">galerie</h4>
+            <h4 className="h4-gallerie">Galerie</h4>
             <div className="w-dyn-list">
               <div className="procedure-gallery-wrapper w-dyn-items">
               {listImg.map((src, index) => (
