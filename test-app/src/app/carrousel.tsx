@@ -9,7 +9,7 @@ interface CarrouselProps {
 // Composant avec l'application du type aux props
 const Carrousel: React.FC<CarrouselProps> = ({ initialePosition = 0 }) => {
     const [position, setPosition] = useState<number>(initialePosition);
-    const nbr = 32; // Nombre total d'images
+    const nbr = 80; // Nombre total d'images
     const [width, setWidth] = useState<number>(window.innerWidth > 1024 ? 600 : 300);
 
     useEffect(() => {
@@ -69,7 +69,55 @@ const Carrousel: React.FC<CarrouselProps> = ({ initialePosition = 0 }) => {
         '/img/o28.jpeg',
         '/img/o29.jpeg',
         '/img/o30.jpeg',
-        '/img/o31.jpeg'
+        '/img/o31.jpeg',
+        '/img/o40.jpeg',
+        '/img/o41.jpeg',
+        '/img/o42.jpeg',
+        '/img/o43.jpeg',
+        '/img/o44.jpeg',
+        '/img/o45.jpeg',
+        '/img/o46.jpeg',
+        '/img/o47.jpeg',
+        '/img/o48.jpeg',
+        '/img/o49.jpeg',
+        '/img/o50.jpeg',
+        '/img/o51.jpeg',
+        '/img/o52.jpeg',
+        '/img/o53.jpeg',
+        '/img/o54.jpeg',
+        '/img/o55.jpeg',
+        '/img/o56.jpeg',
+        '/img/o57.jpeg',
+        '/img/o58.jpeg',
+        '/img/o59.jpeg',
+        '/img/o60.jpeg',
+        '/img/o61.jpeg',
+        '/img/o62.jpeg',
+        '/img/o63.jpeg',
+        '/img/o64.jpeg',
+        '/img/o65.jpeg',
+        '/img/o66.jpeg',
+        '/img/o67.jpeg',
+        '/img/o68.jpeg',
+        '/img/o69.jpeg',
+        '/img/o70.jpeg',
+        '/img/o71.jpeg',
+        '/img/o72.jpeg',
+        '/img/o73.jpeg',
+        '/img/o74.jpeg',
+        '/img/o75.jpeg',
+        '/img/o76.jpeg',
+        '/img/o77.jpeg',
+        '/img/o79.jpeg',
+        '/img/o80.jpeg',
+        '/img/o81.jpeg',
+        '/img/o82.jpeg',
+        '/img/o83.jpeg',
+        '/img/o84.jpeg',
+        '/img/o85.jpeg',
+        '/img/o86.jpeg',
+        '/img/o87.jpeg',
+        '/img/o88.jpeg'
     ];
 
     return ( 

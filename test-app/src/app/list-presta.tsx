@@ -12,7 +12,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Epilations →
                     </div>
-                    <p className="paragraph small wo">Epilations paragraphe</p>
+                    <p className="paragraph small wo">Un instant pour soi</p>
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
@@ -20,7 +20,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Soins du visage →
                     </div>
-                    <p className="paragraph small wo">Soins du visage paragraphe</p>
+                    <p className="paragraph small wo">Oublier le quotidien</p>
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
@@ -28,7 +28,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Changez votre regard →
                     </div>
-                    <p className="paragraph small wo">Regard paragraphe</p>
+                    <p className="paragraph small wo">Pour des yeux de biche</p>
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
@@ -36,7 +36,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Réflexologie plantaire →
                     </div>
-                    <p className="paragraph small wo">Reflexo plant paragraphe</p>
+                    <p className="paragraph small wo">S'évader ailleurs</p>
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
@@ -44,7 +44,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Réflexologie cranienne →
                     </div>
-                    <p className="paragraph small wo">Reflexo cranienne paragraphe</p>
+                    <p className="paragraph small wo">Se vider la tête</p>
                 </a>
             </div>
             <div className="w-dyn-item" role="listitem">
@@ -52,7 +52,7 @@ export default function ListPrestation() {
                     <div className="specialist-link-wrapper">
                         Onglerie →
                     </div>
-                    <p className="paragraph small wo">Onglerie paragraphe</p>
+                    <p className="paragraph small wo">La différence c'est l'élégance</p>
                 </a>
             </div>
         </div>

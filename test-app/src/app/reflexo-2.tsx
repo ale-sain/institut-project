@@ -13,7 +13,7 @@ export default function ReflexopSpeech() {
           <div className="grid-item _50 speech left">
             <div className="presta-left-wrapper speech">
               <div className="miniwraper">
-                <div className="decorative">Softness</div>
+                <div className="decorative">Douceur</div>
                 <h2 className="h2-speech">A propos de la réflexologie...</h2>
               </div>
               <p className="paragraph speech">

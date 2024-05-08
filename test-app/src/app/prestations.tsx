@@ -13,7 +13,7 @@ export default function Prestations() {
           <div className="grid">
             <div className="grid-item _50">
               <div className="presta-left-wrapper">
-                <div className="decorative">Care</div>
+                <div className="decorative">Soins</div>
                 <h2>Les prestations</h2>
                 <p className="paragraph grey">
                   Echappez-vous du quotidien, venez prendre soin de vous...

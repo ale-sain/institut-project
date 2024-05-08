@@ -18,6 +18,14 @@
     padding-bottom: 20px;
 }
 
+/* .parallx-img {
+    display:none;
+} */
+
+.small-img.opposite {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
     .parallx-img {
         display:none;

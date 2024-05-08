@@ -24,16 +24,17 @@ body {
 
 .section {
     width:100%;
+    background-color: aquamarine;
 }
 
 .container {
   max-width: 1440px;
   padding: 72px 4vw;
-  /* background-color: crimson; */
+  background-color: crimson;
 }
 
 .grid {
-  /* background-color: aqua; */
+  background-color: aqua;
   width: 100%;
   flex-wrap: wrap;
   display: flex;
@@ -170,7 +171,7 @@ h4 {
 }
 
 
-.about h1, .about p, .button, .nav {
+.about h1, .about p, .button, .nav, .center-wrapper {
   opacity: 0;
   transform: translateY(30px);
 }

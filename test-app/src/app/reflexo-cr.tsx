@@ -18,10 +18,10 @@ export default function ReflexoCranienne() {
             <div className="presta-right-wrapper rfc">
               <div className="decorative rfc">Lâcher le mental</div>
               <h2 className="h2-rfc">Réflexologie crânienne</h2>
-              <div className="specialist-link-wrapper reflexop rfc">1 HEURE, 55$</div>
+              <div className="specialist-link-wrapper reflexop rfc">1 HEURE, 55€</div>
               <div className="wrapper-question">
                 <p className="paragraph grey rfc">
-                    Dans quel cas utiliser la méthode Access Bars ?
+                    Dans quel cas utiliser la réflexologie crânienne ?
                 </p>
                 <ul className="p-block">
                     <li className="list-item rfc">lorsque des idées fixes nous empêchent d&apos;avancer dans la vie</li>

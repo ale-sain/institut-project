@@ -15,7 +15,7 @@ export default function ReflexologiePlantaire() {
                     <div className="decorative">À essayer au moins une fois...</div>
                     <h2>Réflexologie plantaire</h2>
                     <div className="specialist-link-wrapper reflexop">
-                        1 HEURE, 45$
+                        1 HEURE, 55€
                     </div>
                 </div>
             </div>

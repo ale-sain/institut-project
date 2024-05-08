@@ -7,21 +7,22 @@ import NailGallery from './gallery'
 
 export default function Onglerie() {
     const tarifsMains = [
-        { titre: 'Renforcement (transparent)', prix: '37€' },
-        { titre: 'Gel Couleur', prix: '39€' },
-        { titre: 'Gel French', prix: '44€' },
-        { titre: 'Gel Babyboomer', prix: '44€' },
-        { titre: 'Ongle décoré', prix: '1€' },
-        { titre: 'Forfait déco.', prix: '5€' },
-        { titre: 'Réparation ongle cassé', prix: '4€' },
+        { titre: 'Couleur', prix: '40€' },
+        { titre: 'French', prix: '45€' },
+        { titre: 'Babyboomer', prix: '48€' },
+        { titre: 'Strass x 1', prix: '+1€' },
+        { titre: 'Forfait déco.', prix: '+5€' },
+        { titre: 'Réparation ongle cassé', prix: '+4€' },
         { titre: 'Dépose complète avec soin', prix: '20€' },
         { titre: 'Manucure classique + pose de vernis', prix: '25€' },
+        { titre: 'Manucure classique + pose de vernis longue durée', prix: '30€' },
     ];
 
     const tarifsPieds = [
-        { titre: 'Gel French ou Gel Couleur', prix: '38€' },
-        { titre: 'Soin Yumi Feet (anti-Calosités) + pédicure + gel french ou couleur', prix: '50€' },
-        { titre: 'Soin Yumi Feet (anti-calosités) + pédicure avec ou sans vernis', prix: '40€' },
+        { titre: 'Pédicure + French ou Couleur', prix: '40€' },
+        { titre: 'Pédicure classique + vernis', prix: '25€' },
+        { titre: 'Soin Anti-Calosités + French ou Couleur', prix: '52€' },
+        { titre: 'Soin Anti-Calosités avec ou sans vernis', prix: '42€' },
     ];
 
   return (
@@ -35,14 +36,14 @@ export default function Onglerie() {
                 <h2>Onglerie</h2>
                 <div className="wrapper-question onglerie">
                     <p className="paragraph grey rfc">
-                        J&apos;utilise un gel organique qui n&apos;affecte pas le métabolisme de l&apos;ongle :
+                        J&apos;utilise CALGEL, un gel organique qui n&apos;affecte pas le métabolisme de l&apos;ongle :
                     </p>
                     <ul className="p-block">
                         <li className="list-item rfc">Il donne un aspect fin et naturel à vos ongles</li>
                         <li className="list-item rfc">Il est flexible, résistant et solide</li>
                     </ul>
                     <p className="paragraph grey rfc">
-                        Ici pas de ponceuse !
+                        <br></br>Ici pas de ponceuse, pas d'acide, pas d'acrylique !
                     </p>
                 </div>
                 <div className="wrapper-question onglerie">
@@ -56,7 +57,8 @@ export default function Onglerie() {
                     </ul>
                 </div>
                 <p className="paragraph grey onglerie">
-                    ESSAYEZ LA <strong>POSE D&apos;ONGLES EN GEL !</strong>
+                   Avec CALGEL, le gel incontournable des prothésistes ongulaires, découvrez la qualité professionnelle par excellence.
+                  <br></br>Essayez le, vous ne pourrez plus vous en passer !
                 </p>
             </div>
           </div>

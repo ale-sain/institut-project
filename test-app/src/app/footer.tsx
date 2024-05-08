@@ -8,10 +8,10 @@ export default function Footer() {
             <div className="center-content-wrapper center-aligment footer">
                 <div className="decorative footer">À propos de l&apos;institut...</div>
                 <div className="content-footer">
-                    <h2  className="h2-footer">Institut secrets de beauté</h2>
+                    <h2  className="h2-footer">Institut Secrets de Beauté</h2>
                     <div className="wrapper-footer">
-                        <p className="p-footer">Institut climatisé</p>
-                        <p className="p-footer">Adresse: 10 rue du Distro, 56690 LANDEVANT</p>
+                        <p className="p-footer">INSTITUT CLIMATISE</p>
+                        <p className="p-footer">Adresse : 10 rue du Distro, 56690 LANDEVANT</p>
                     </div>
                     <div className="wrapper-footer">
                         <p className="p-footer">Tel : 06 12 35 08 77</p>
@@ -25,6 +25,7 @@ export default function Footer() {
                         <p className="p-footer heavy">Ouvert sur rendez-vous</p>
                         <p className="p-footer">du Lundi au Vendredi : de 9h00 a 19h00</p>
                         <p className="p-footer">le Samedi : de 9h00 a 13h00</p>
+                        <p className="p-footer">Fermé le mercredi</p>
                     </div>
                 </div>
             </div>

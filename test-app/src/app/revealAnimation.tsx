@@ -5,7 +5,7 @@ import '../styles/revealAnimation.css';
 export default function RevealAnimation() {
   return (
       <div className="container-reveal">
-        <div className="loader">Institut secrets de beaute</div>
+        <div className="loader">Institut Secrets de Beauté</div>
             <div className="overlay">
             <div className="block block-1"></div>
             <div className="block block-2"></div>
