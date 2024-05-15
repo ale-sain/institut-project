@@ -49,13 +49,13 @@ outline: 0;
 }
 
 .specialist-link-wrapper {
-color: #8f7d6b;
-letter-spacing: .02em;
-text-transform: uppercase;
-align-items: center;
-display: flex;
-font-family: Lexend, sans-serif;
-font-size: 14px;
+    color: #8f7d6b;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    font-family: Lexend, sans-serif;
+    font-size: 14px;
 }
 
   .paragraph.small {
@@ -80,6 +80,10 @@ font-size: 14px;
         flex-direction: column;
         align-items: flex-start;
       }
+
+        .specialist-link-wrapper {
+            font-size: 13.5px;
+        }
 }
 
 @media screen and (max-width: 1224px) and (min-width: 1024px) {

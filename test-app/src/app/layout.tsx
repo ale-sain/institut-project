@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Institut secret de beaute",
+  title: "Institut Secrets de Beauté / Réflexologie / Onglerie LANDEVANT (56)",
+  description: "Prestations : épilations, soins du visage, réflexologie plantaire et crânienne, pose de gel, manucure. Institut climatisé. Adresse : 10 rue du Distro 56690 LANDEVANT. Tel : 06.12.35.08.77. Rendez-vous par SMS.",
 };
 
 export default function RootLayout({

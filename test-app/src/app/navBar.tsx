@@ -46,14 +46,14 @@ export default function NavBar() {
                     <span></span>
                 </div>
                 <div className={`menu ${isOpen ? 'open' : ''}`}>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'accueil')}>Accueil</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'epilation')}>Epilations</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'soin-visage')}>Soins du visage</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'soin-regard')}>Changez votre regard</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'reflexologie-plantaire')}>Réflexologie</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'onglerie')}>Onglerie</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'thalion')}>Thal&apos;ion</a>
-                    <a className="item" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'contact')}>Contact</a>
+                    <a className="item" href="#accueil" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'accueil')}>Accueil</a>
+                    <a className="item" href="#epilation" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'epilation')}>Epilations</a>
+                    <a className="item" href="#soin-visage" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'soin-visage')}>Soins du visage</a>
+                    <a className="item" href="#soin-regard" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'soin-regard')}>Changez votre regard</a>
+                    <a className="item" href="#reflexologie-plantaire" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'reflexologie-plantaire')}>Réflexologie</a>
+                    <a className="item" href="#onglerie" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'onglerie')}>Onglerie</a>
+                    <a className="item" href="#thalion" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'thalion')}>Thal&apos;ion</a>
+                    <a className="item" href="#contact" onMouseEnter={handleItemMouseEnter} onMouseLeave={handleMouseLeave} onClick={(e) => handleItemClick(e, 'contact')}>Contact</a>
                 </div>
             </div>
         </nav>
