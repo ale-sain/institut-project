@@ -6,7 +6,7 @@ This project involves the development of a **modern, interactive, and fully resp
 
 The website has been **deployed on Vercel**, enabling fast and reliable performance.
 
-## **Technologies Used**
+## **Technologies Used** 
 
 - **React**: Frontend library for building a dynamic, modular, and maintainable website.  
 - **CSS**: Custom responsive styling to ensure a consistent experience across devices (mobile, tablet, desktop).  
