@@ -7,23 +7,25 @@ import NailGallery from './gallery'
 
 export default function Onglerie() {
     const tarifsMains = [
-        { titre: 'Couleur', prix: '40€' },
-        { titre: 'French', prix: '45€' },
-        { titre: 'Babyboomer', prix: '48€' },
-        { titre: 'Strass x 1', prix: '+1€' },
-        { titre: 'Forfait déco.', prix: '+5€' },
-        { titre: 'Réparation ongle cassé', prix: '+4€' },
-        { titre: 'Dépose complète avec soin', prix: '20€' },
-        { titre: 'Manucure classique + pose de vernis', prix: '25€' },
-        { titre: 'Manucure classique + pose de vernis longue durée', prix: '30€' },
-    ];
+      { titre: 'Couleur', prix: '42€' },
+      { titre: 'French', prix: '48€' },
+      { titre: 'Babyboomer', prix: '48€' },
+      { titre: 'Strass x 1', prix: '+1€' },
+      { titre: 'Forfait déco.', prix: '+5€' },
+      { titre: 'Forfait paillettes', prix: '+3€' },
+      { titre: 'Réparation ongle cassé', prix: '+4€' },
+      { titre: 'Dépose complète avec soin', prix: '25€' },
+      { titre: 'Dépose ext.', prix: '+10€' },
+      { titre: 'Manucure classique + pose de vernis classique', prix: '30€' },
+      { titre: 'Manucure classique + pose de vernis longue durée', prix: '32€' },
+  ];
 
-    const tarifsPieds = [
-        { titre: 'Pédicure + French ou Couleur', prix: '40€' },
-        { titre: 'Pédicure classique + vernis', prix: '25€' },
-        { titre: 'Soin Anti-Calosités + French ou Couleur', prix: '52€' },
-        { titre: 'Soin Anti-Calosités avec ou sans vernis', prix: '42€' },
-    ];
+  const tarifsPieds = [
+      { titre: 'Pédicure + French ou Couleur', prix: '40€' },
+      { titre: 'Pédicure classique + vernis', prix: '30€' },
+      { titre: 'Soin Anti-Calosités + French ou Couleur', prix: '55€' },
+      { titre: 'Soin Anti-Calosités avec ou sans vernis', prix: '46€' },
+  ];
 
   return (
     <>
