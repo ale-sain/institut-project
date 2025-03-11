@@ -43,7 +43,7 @@ export default function Epilations() {
     const forfaits = [
       { titre: 'Jamb compl. + Maillot classique / échancré + Aisselles', prix: '46€' },
       { titre: 'Jamb compl. + Maillot classique / échancré OU Aisselles', prix: '39€' },
-      { titre: '1/2 jambes + Maillot classique / échancré + Aisselles', prix: '36€' },
+      { titre: '1/2 jambes + Maillot classique / échancré + Aisselles', prix: '38€' },
       { titre: '1/2 Jambes + Maillot classique / échancré OU Aisselles', prix: '30€' },
       { titre: 'Maillot Int.', prix: '+8€' },
       { titre: 'Maillot Classique / échancré + Aisselles', prix: '28€' },
